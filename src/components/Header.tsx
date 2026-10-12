@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SukhavasLogo from "./SukhavasLogo";
 
 interface HeaderProps {
   onOpenBooking: () => void;
@@ -60,13 +59,17 @@ export default function Header({ onOpenBooking }: HeaderProps) {
         }`}
       >
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-8 md:px-12 flex items-center justify-between">
-          {/* Left Brand: Sukhavas Concentric Vector Logo */}
+          {/* Left Brand: Sukhavas Official Logo */}
           <a
             href="#overview"
             onClick={(e) => handleLinkClick(e, "overview")}
             className="flex items-center gap-2 group focus:outline-none z-10"
           >
-            <SukhavasLogo variant="horizontal" className="h-10 sm:h-12 w-auto" theme="light" />
+            <img
+              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              alt="Sukhavas - Legacy of Elegance"
+              className="h-9 sm:h-11 w-auto object-contain brightness-0 invert"
+            />
           </a>
 
           {/* Center Navigation Links matching the reference structure */}
@@ -141,7 +144,11 @@ export default function Header({ onOpenBooking }: HeaderProps) {
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-20 bg-[#1B0E17]/98 backdrop-blur-xl z-40 lg:hidden flex flex-col p-6 sm:p-8 space-y-4 animate-fade-in border-t border-white/10 overflow-y-auto">
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
-            <SukhavasLogo variant="horizontal" className="h-9 w-auto" theme="light" />
+            <img
+              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              alt="Sukhavas"
+              className="h-8 w-auto object-contain brightness-0 invert"
+            />
             <span className="text-[11px] uppercase tracking-widest text-[#E6C7A8] font-semibold">
               Legacy of Elegance
             </span>

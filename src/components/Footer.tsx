@@ -1,7 +1,6 @@
 import React from "react";
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { projectSnapshot } from "../data";
-import SukhavasLogo from "./SukhavasLogo";
 
 interface FooterProps {
   onOpenPrivacy?: () => void;
@@ -27,7 +26,11 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
         {/* Top Minimal Brand & CTA Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-10 sm:pb-16 border-b border-white/10">
           <div className="space-y-4 max-w-xl">
-            <SukhavasLogo variant="horizontal" className="h-12 sm:h-14 w-auto" theme="light" />
+            <img
+              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              alt="Sukhavas - Legacy of Elegance"
+              className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
+            />
             <p className="text-xl sm:text-2xl md:text-3xl font-display font-normal text-white/95 tracking-tight leading-snug">
               Sukhavas — Legacy of Elegance. A contemporary residential landmark in Panchkula.
             </p>
