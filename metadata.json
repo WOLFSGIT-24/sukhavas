@@ -1,0 +1,6 @@
+{
+  "name": "Sukhavas",
+  "description": "Exquisite landing page for Sukhavas luxury residences in Panchkula, featuring interactive floor plans, curated amenities, master plan explore, and private booking portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

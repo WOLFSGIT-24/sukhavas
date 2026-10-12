@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <!-- Sukhavas Concentric Tri-Circle Emblem -->
+  <g transform="translate(100, 60)">
+    <!-- Lobe 1 (Top) -->
+    <g>
+      <path d="M -24,-3 C -20,-18 -9,-29 0,-32 C 9,-29 20,-18 24,-3" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -20,-7 C -16,-20 -7,-27 0,-29 C 7,-27 16,-20 20,-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -16,-11 C -12,-21 -5,-25 0,-26 C 5,-25 12,-21 16,-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -11,-14 C -8,-20 -3,-22 0,-23 C 3,-22 8,-20 11,-14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -7,-16 C -5,-19 -2,-20 0,-20.5 C 2,-20 5,-19 7,-16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    </g>
+    <!-- Lobe 2 (Bottom Right) -->
+    <g transform="rotate(120)">
+      <path d="M -24,-3 C -20,-18 -9,-29 0,-32 C 9,-29 20,-18 24,-3" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -20,-7 C -16,-20 -7,-27 0,-29 C 7,-27 16,-20 20,-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -16,-11 C -12,-21 -5,-25 0,-26 C 5,-25 12,-21 16,-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -11,-14 C -8,-20 -3,-22 0,-23 C 3,-22 8,-20 11,-14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -7,-16 C -5,-19 -2,-20 0,-20.5 C 2,-20 5,-19 7,-16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    </g>
+    <!-- Lobe 3 (Bottom Left) -->
+    <g transform="rotate(240)">
+      <path d="M -24,-3 C -20,-18 -9,-29 0,-32 C 9,-29 20,-18 24,-3" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -20,-7 C -16,-20 -7,-27 0,-29 C 7,-27 16,-20 20,-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -16,-11 C -12,-21 -5,-25 0,-26 C 5,-25 12,-21 16,-11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -11,-14 C -8,-20 -3,-22 0,-23 C 3,-22 8,-20 11,-14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+      <path d="M -7,-16 C -5,-19 -2,-20 0,-20.5 C 2,-20 5,-19 7,-16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    </g>
+  </g>
+
+  <!-- Sukhavas Wordmark -->
+  <text
+    x="100"
+    y="142"
+    text-anchor="middle"
+    font-family="'ivyora', 'Playfair Display', 'Cinzel', Georgia, serif"
+    font-size="22"
+    font-weight="600"
+    letter-spacing="0.32em"
+    fill="currentColor"
+  >SUKHAVAS</text>
+
+  <!-- Subtitle / Tagline from Brand Guidelines -->
+  <text
+    x="100"
+    y="162"
+    text-anchor="middle"
+    font-family="'Montserrat', sans-serif"
+    font-size="8.5"
+    font-weight="500"
+    letter-spacing="0.28em"
+    fill="currentColor"
+    opacity="0.8"
+  >LEGACY OF ELEGANCE</text>
+</svg>

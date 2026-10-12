@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <defs>
+    <!-- Triskelion Concentric Arc Definition -->
+    <clipPath id="lobe-clip">
+      <path d="M 32,32 L 14,0 A 32,32 0 0,1 50,0 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Sukhavas Concentric Tri-Circle Emblem -->
+  <g transform="translate(4, 2)">
+    <!-- 3-Fold Concentric Rings -->
+    <!-- Center (30, 30) -->
+    <g transform="translate(30, 30)">
+      <!-- Lobe 1 (Top) -->
+      <g>
+        <path d="M -16,-2 C -13,-12 -6,-19 0,-21 C 6,-19 13,-12 16,-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -13,-5 C -10,-13 -5,-18 0,-19 C 5,-18 10,-13 13,-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -10,-7 C -8,-14 -4,-16 0,-17 C 4,-16 8,-14 10,-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -7,-9 C -5,-13 -2,-14 0,-14.5 C 2,-14 5,-13 7,-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -4,-10.5 C -3,-12 -1,-12.5 0,-12.7 C 1,-12.5 3,-12 4,-10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+      </g>
+      <!-- Lobe 2 (Bottom Right - rotated 120 deg) -->
+      <g transform="rotate(120)">
+        <path d="M -16,-2 C -13,-12 -6,-19 0,-21 C 6,-19 13,-12 16,-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -13,-5 C -10,-13 -5,-18 0,-19 C 5,-18 10,-13 13,-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -10,-7 C -8,-14 -4,-16 0,-17 C 4,-16 8,-14 10,-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -7,-9 C -5,-13 -2,-14 0,-14.5 C 2,-14 5,-13 7,-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -4,-10.5 C -3,-12 -1,-12.5 0,-12.7 C 1,-12.5 3,-12 4,-10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+      </g>
+      <!-- Lobe 3 (Bottom Left - rotated 240 deg) -->
+      <g transform="rotate(240)">
+        <path d="M -16,-2 C -13,-12 -6,-19 0,-21 C 6,-19 13,-12 16,-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -13,-5 C -10,-13 -5,-18 0,-19 C 5,-18 10,-13 13,-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -10,-7 C -8,-14 -4,-16 0,-17 C 4,-16 8,-14 10,-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -7,-9 C -5,-13 -2,-14 0,-14.5 C 2,-14 5,-13 7,-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M -4,-10.5 C -3,-12 -1,-12.5 0,-12.7 C 1,-12.5 3,-12 4,-10.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Central subtle negative triangle vertex markers -->
+      <circle cx="0" cy="0" r="1.5" fill="currentColor" opacity="0.3" />
+    </g>
+  </g>
+
+  <!-- Sukhavas Wordmark -->
+  <g transform="translate(80, 40)">
+    <text
+      x="0"
+      y="0"
+      font-family="'ivyora', 'Playfair Display', 'Cinzel', Georgia, serif"
+      font-size="28"
+      font-weight="600"
+      letter-spacing="0.28em"
+      fill="currentColor"
+    >SUKHAVAS</text>
+  </g>
+</svg>
