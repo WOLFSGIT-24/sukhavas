@@ -9,24 +9,24 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
   // Bottom Auto-Scrolling Building Images
   const autoScrollImages = [
     {
-      src: "/assets/silver_horizon/building_slide_01.webp",
-      alt: "Sukhavas Architectural Grandeur View 1",
+      src: "/assets/sukhavas/1.webp",
+      fallback: "/assets/sukhavas/1.png",
+      alt: "Sukhavas 100% Park-Facing Panoramic View",
     },
     {
-      src: "/assets/silver_horizon/building_slide_02.webp",
-      alt: "Sukhavas Contemporary Facade View 2",
+      src: "/assets/sukhavas/2.webp",
+      fallback: "/assets/sukhavas/2.png",
+      alt: "Sukhavas Illuminated Tower Night Elevation",
     },
     {
-      src: "/assets/silver_horizon/building_slide_03.webp",
-      alt: "Sukhavas Elevated Landmark View 3",
+      src: "/assets/sukhavas/3.webp",
+      fallback: "/assets/sukhavas/3.png",
+      alt: "Sukhavas Wrap-Around Balcony Sunset Vista",
     },
     {
-      src: "/assets/silver_horizon/building_slide_04.webp",
-      alt: "Sukhavas Residential Skyline View 4",
-    },
-    {
-      src: "/assets/silver_horizon/building_slide_05.webp",
-      alt: "Sukhavas Tower Perspective View 5",
+      src: "/assets/sukhavas/4.webp",
+      fallback: "/assets/sukhavas/4.png",
+      alt: "Sukhavas Iconic Daytime Architecture Elevation",
     },
   ];
 
@@ -95,12 +95,15 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
               key={idx}
               className="flex-shrink-0 w-[80vw] sm:w-[55vw] md:w-[620px] aspect-[16/11] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-[#FAF8F5] group"
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+              <picture className="w-full h-full block">
+                <source srcSet={img.src} type="image/webp" />
+                <img
+                  src={img.fallback || img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </picture>
             </div>
           ))}
         </div>

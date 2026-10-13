@@ -102,13 +102,16 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
   return (
     <section id="lead-capture-section" className="w-full relative min-h-[560px] md:min-h-[640px] overflow-hidden flex items-center py-12 md:py-20">
       {/* Full-bleed Background Image with tower clearly visible on the left */}
-      <img
-        src="/assets/silver_horizon/tower_day_view.webp"
-        alt="Sukhavas Luxury Architecture"
-        className="absolute inset-0 w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
-        loading="lazy"
-        decoding="async"
-      />
+      <picture className="absolute inset-0 w-full h-full">
+        <source srcSet="/assets/sukhavas/4.webp" type="image/webp" />
+        <img
+          src="/assets/sukhavas/4.png"
+          alt="Sukhavas Luxury Architecture"
+          className="w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
       {/* Subtle right gradient overlay for card readability */}
       <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-l from-black/60 via-black/20 to-transparent pointer-events-none" />
 

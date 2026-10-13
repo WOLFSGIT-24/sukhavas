@@ -3,59 +3,28 @@ import { ZoomIn, X } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/assets/silver_horizon/balcony_sunset_panorama.webp",
-    title: "Wrap-Around Panoramic Balcony",
-    category: "Skyline Living",
+    src: "/assets/sukhavas/1.webp",
+    fallback: "/assets/sukhavas/1.png",
+    title: "100% Park-Facing Panoramic View",
+    category: "Nature & Panoramic Greens",
   },
   {
-    src: "/assets/silver_horizon/grand_lobby.webp",
-    title: "Elegant Reception & Waiting Lounge",
-    category: "Arrival Experience",
+    src: "/assets/sukhavas/2.webp",
+    fallback: "/assets/sukhavas/2.png",
+    title: "Illuminated Tower Night Elevation",
+    category: "Landmark Architecture",
   },
   {
-    src: "/assets/silver_horizon/living_room_skyline.webp",
-    title: "Imported Marble Living & Dining",
-    category: "Residences",
+    src: "/assets/sukhavas/3.webp",
+    fallback: "/assets/sukhavas/3.png",
+    title: "Wrap-Around Balcony Living at Sunset",
+    category: "Exclusive Residences",
   },
   {
-    src: "/assets/silver_horizon/duplex_staircase.webp",
-    title: "MIVAN Precision Architecture",
-    category: "Construction Excellence",
-  },
-  {
-    src: "/assets/silver_horizon/master_bedroom.webp",
-    title: "Master Suite with Wooden Flooring",
-    category: "Interiors",
-  },
-  {
-    src: "/assets/silver_horizon/pavilion_amphitheatre.webp",
-    title: "The Adaptive Terrace Sky Lounge",
-    category: "Community & Terrace",
-  },
-  {
-    src: "/assets/silver_horizon/indoor_pool.webp",
-    title: "Ultra-Filtration Swimming Pool",
-    category: "Wellness",
-  },
-  {
-    src: "/assets/silver_horizon/wellness_pool.webp",
-    title: "Wellness Centre & Steam Retreat",
-    category: "Wellness",
-  },
-  {
-    src: "/assets/silver_horizon/pet_park.webp",
-    title: "Scenic Park-Facing Greens",
-    category: "Outdoor Spaces",
-  },
-  {
-    src: "/assets/silver_horizon/kids_play_area.webp",
-    title: "Dedicated Kids Play Area",
-    category: "Kids Zone",
-  },
-  {
-    src: "/assets/silver_horizon/night_tower_landmark.webp",
-    title: "Night Architectural Elevation",
-    category: "Landmark Elevation",
+    src: "/assets/sukhavas/4.webp",
+    fallback: "/assets/sukhavas/4.png",
+    title: "Iconic Daytime Architecture",
+    category: "Contemporary Facade",
   },
 ];
 
@@ -97,28 +66,31 @@ export default function Gallery() {
           .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 40s linear infinite;
+            animation: marquee 35s linear infinite;
           }
           .animate-marquee:hover {
             animation-play-state: paused;
           }
         `}</style>
 
-        {/* Marquee Row 1 */}
+        {/* Marquee Row */}
         <div className="w-full overflow-hidden relative py-2">
           <div className="animate-marquee gap-6">
-            {[...galleryImages, ...galleryImages].map((img, idx) => (
+            {[...galleryImages, ...galleryImages, ...galleryImages, ...galleryImages].map((img, idx) => (
               <div
                 key={idx}
                 onClick={() => setActivePhoto(img)}
-                className="flex-shrink-0 w-[280px] sm:w-[360px] md:w-[420px] aspect-[16/11] rounded-2xl overflow-hidden shadow-lg relative group cursor-pointer border border-[#E5DED3]"
+                className="flex-shrink-0 w-[280px] sm:w-[380px] md:w-[460px] aspect-[1514/1039] rounded-2xl overflow-hidden shadow-lg relative group cursor-pointer border border-[#E5DED3]"
               >
-                <img
-                  src={img.src}
-                  alt={img.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
+                <picture className="w-full h-full block">
+                  <source srcSet={img.src} type="image/webp" />
+                  <img
+                    src={img.fallback || img.src}
+                    alt={img.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </picture>
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
                   <span className="text-[10px] uppercase font-semibold text-white/80 tracking-widest">
@@ -163,11 +135,14 @@ export default function Gallery() {
             </div>
 
             <div className="overflow-auto flex-1 my-3 flex items-center justify-center bg-[#090F1D] rounded-xl p-2">
-              <img
-                src={activePhoto.src}
-                alt={activePhoto.title}
-                className="max-w-full max-h-[68vh] object-contain rounded-lg"
-              />
+              <picture className="max-w-full max-h-[68vh] flex items-center justify-center">
+                <source srcSet={activePhoto.src} type="image/webp" />
+                <img
+                  src={activePhoto.fallback || activePhoto.src}
+                  alt={activePhoto.title}
+                  className="max-w-full max-h-[68vh] object-contain rounded-lg"
+                />
+              </picture>
             </div>
           </div>
         </div>
