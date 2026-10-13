@@ -45,7 +45,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
     { label: "About", id: "about" },
     { label: "Master Plan", id: "master-plan" },
     { label: "Amenities", id: "amenities" },
-    { label: "Floor Plans", id: "floor-plans" },
+    { label: "Gallery", id: "gallery" },
     { label: "Location", id: "location" },
   ];
 

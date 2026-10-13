@@ -76,7 +76,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
                 { label: "Overview", id: "overview" },
                 { label: "Amenities", id: "amenities" },
                 { label: "Master Plan", id: "master-plan" },
-                { label: "Floor Plans", id: "floor-plans" },
+                { label: "Gallery", id: "gallery" },
                 { label: "Location", id: "location" },
               ].map((item) => (
                 <button

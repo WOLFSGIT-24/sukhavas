@@ -192,13 +192,15 @@ export default function App() {
           onRequestDownload={handleRequestDownload}
         />
 
-        {/* Interactive Floor Drafting Plans (Sukhavas 4 BHK Boutique Residences) */}
+        {/* Interactive Floor Drafting Plans (Hidden as requested) */}
+        {/*
         <FloorPlans 
           onSelectUnit={handleSelectUnitType} 
           isUnlocked={floorPlansUnlocked}
           onUnlockRequest={() => setBookingOpen(true)}
           onOpenBooking={handleHeroEnquiry}
         />
+        */}
 
         {/* Visual Living Spaces Gallery */}
         <Gallery />
