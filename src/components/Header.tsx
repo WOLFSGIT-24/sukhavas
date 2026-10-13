@@ -67,7 +67,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
           >
             <img
               src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
-              alt="Sukhavas - Legacy of Elegance"
+              alt="Sukhavas: Legacy of Elegance"
               className="h-9 sm:h-11 w-auto object-contain brightness-0 invert"
             />
           </a>

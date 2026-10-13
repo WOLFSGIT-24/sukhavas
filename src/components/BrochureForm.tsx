@@ -105,7 +105,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
       <picture className="absolute inset-0 w-full h-full">
         <source srcSet="/assets/sukhavas/4.webp" type="image/webp" />
         <img
-          src="/assets/sukhavas/4.png"
+          src="/assets/sukhavas/4.webp"
           alt="Sukhavas Luxury Architecture"
           className="w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
           loading="lazy"

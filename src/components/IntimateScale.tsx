@@ -10,22 +10,22 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
   const autoScrollImages = [
     {
       src: "/assets/sukhavas/1.webp",
-      fallback: "/assets/sukhavas/1.png",
+      fallback: "/assets/sukhavas/1.webp",
       alt: "Sukhavas 100% Park-Facing Panoramic View",
     },
     {
       src: "/assets/sukhavas/2.webp",
-      fallback: "/assets/sukhavas/2.png",
+      fallback: "/assets/sukhavas/2.webp",
       alt: "Sukhavas Illuminated Tower Night Elevation",
     },
     {
       src: "/assets/sukhavas/3.webp",
-      fallback: "/assets/sukhavas/3.png",
+      fallback: "/assets/sukhavas/3.webp",
       alt: "Sukhavas Wrap-Around Balcony Sunset Vista",
     },
     {
       src: "/assets/sukhavas/4.webp",
-      fallback: "/assets/sukhavas/4.png",
+      fallback: "/assets/sukhavas/4.webp",
       alt: "Sukhavas Iconic Daytime Architecture Elevation",
     },
   ];
@@ -46,17 +46,17 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
               About Sukhavas
             </h2>
             <p className="text-sm sm:text-base text-[#655335] font-medium italic font-body leading-relaxed pt-1">
-              "Sukhavas is a serene and positive name rooted in Sanskrit origin — perfect for a residence that aspires to offer harmony, comfort and joy."
+              "Sukhavas is a serene and positive name rooted in Sanskrit origin, perfect for a residence that aspires to offer harmony, comfort and joy."
             </p>
           </div>
 
           {/* Right Description & CTA */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal font-body">
-              Sukhavas is a contemporary residential project designed to be a sanctuary from the chaos of everyday life. Sukhavas embodies a lifestyle where serenity meets thoughtful living whether in architecture, community or values, everything here is built around the idea of balance — between nature and comfort, privacy and togetherness, simplicity and elegance.
+              Sukhavas is a contemporary residential project designed to be a sanctuary from the chaos of everyday life. Sukhavas embodies a lifestyle where serenity meets thoughtful living whether in architecture, community or values, everything here is built around the idea of balance between nature and comfort, privacy and togetherness, simplicity and elegance.
             </p>
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal font-body">
-              At Sukhavas, we believe a true home doesn't just shelter—it nurtures. Every detail is imagined to bring joy, calm and deep sense of belonging. Here, life flows gently, hearts feel lighter and days begin and end with gratitude.
+              At Sukhavas, we believe a true home doesn't just shelter, it nurtures. Every detail is imagined to bring joy, calm and deep sense of belonging. Here, life flows gently, hearts feel lighter and days begin and end with gratitude.
             </p>
             <div className="pt-2">
               <button

@@ -93,7 +93,7 @@ export default function FloorPlans({
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal">
-              Spacious 4 BHK Homes — generously sized interiors that balance privacy and togetherness. Only two homes per floor with fewer neighbours, 100% park-facing orientation, wrap-around balconies, scenic outdoor dining space, and dual-access 4th bedroom convertible to 3 BHK + S.
+              Spacious 4 BHK Homes: generously sized interiors that balance privacy and togetherness. Only two homes per floor with fewer neighbours, 100% park-facing orientation, wrap-around balconies, scenic outdoor dining space, and dual-access 4th bedroom convertible to 3 BHK + S.
             </p>
             <div>
               <button

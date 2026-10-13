@@ -29,7 +29,7 @@ export default function Specifications() {
           {/* Right Description */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal font-body">
-              Every detail, crafted to perfection — from flooring to fittings. Premium materials & timeless textures that elevate everyday living. Unit features and specifications for our limited-edition 4 BHK boutique residences.
+              Every detail, crafted to perfection from flooring to fittings. Premium materials & timeless textures that elevate everyday living. Unit features and specifications for our limited-edition 4 BHK boutique residences.
             </p>
           </div>
 

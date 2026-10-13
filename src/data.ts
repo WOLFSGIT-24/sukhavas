@@ -14,13 +14,13 @@ export const projectSnapshot = {
   subtitle: "Legacy of Elegance",
   meaning: "Home of Happiness",
   sanskritOrigin:
-    "Sukhavas is a serene and positive name rooted in Sanskrit origin - perfect for a residence that aspires to offer harmony, comfort and joy.",
+    "Sukhavas is a serene and positive name rooted in Sanskrit origin, perfect for a residence that aspires to offer harmony, comfort and joy.",
   motto: "Your space, your peace, your sanctuary",
   reraNumber: "HRERA-PKL-PKL-689-2025",
   developer: "SR Paryavaran Engineers (SRP)",
   developerFull: "SR Paryavaran Engineers",
   developerBio:
-    "SR Paryavaran Engineers (SRP) is a 35-year-old, family-owned enterprise with a proven track record of delivering over 4,000 successful construction projects. Known for its pioneering work in advanced environmental control systems, SRP has treated more than 6 billion litres of water through its in-house innovations and engineering excellence. With two modern manufacturing units and a multidisciplinary in-house team of over 350 experts, SRP integrates deep domain knowledge across civil, electrical, and automation disciplines—ensuring uncompromising quality and seamless project execution.",
+    "SR Paryavaran Engineers (SRP) is a 35-year-old, family-owned enterprise with a proven track record of delivering over 4,000 successful construction projects. Known for its pioneering work in advanced environmental control systems, SRP has treated more than 6 billion litres of water through its in-house innovations and engineering excellence. With two modern manufacturing units and a multidisciplinary in-house team of over 350 experts, SRP integrates deep domain knowledge across civil, electrical, and automation disciplines, ensuring uncompromising quality and seamless project execution.",
   address: "GH 16, Sector 24, Panchkula, Haryana",
   siteOffice: "GH 16, Sector 24, Panchkula, Haryana",
   headOffice: "70 Phase 1, Industrial Area, Panchkula, Haryana",
@@ -44,11 +44,11 @@ export const aboutSukhavasContent = {
   title: "About Sukhavas",
   tagline: "Home of Happiness • Legacy of Elegance",
   sanskritNote:
-    "Sukhavas is a serene and positive name rooted in Sanskrit origin - perfect for a residence that aspires to offer harmony, comfort and joy.",
+    "Sukhavas is a serene and positive name rooted in Sanskrit origin, perfect for a residence that aspires to offer harmony, comfort and joy.",
   paragraph1:
-    "Sukhavas is a contemporary residential project designed to be a sanctuary from the chaos of everyday life. Sukhavas embodies a lifestyle where serenity meets thoughtful living whether in architecture, community or values, everything here is built around the idea of balance - between nature and comfort, privacy and togetherness, simplicity and elegance.",
+    "Sukhavas is a contemporary residential project designed to be a sanctuary from the chaos of everyday life. Sukhavas embodies a lifestyle where serenity meets thoughtful living whether in architecture, community or values, everything here is built around the idea of balance between nature and comfort, privacy and togetherness, simplicity and elegance.",
   paragraph2:
-    "At Sukhavas, we believe a true home doesn't just shelter-it nurtures. Every detail is imagined to bring joy, calm and deep sense of belonging. Here, life flows gently, hearts feel lighter and days begin and end with gratitude.",
+    "At Sukhavas, we believe a true home doesn't just shelter, it nurtures. Every detail is imagined to bring joy, calm and deep sense of belonging. Here, life flows gently, hearts feel lighter and days begin and end with gratitude.",
   motto: "Your space, your peace, your sanctuary",
   rera: "HRERA-PKL-PKL-689-2025",
 };
@@ -83,7 +83,7 @@ export const residencesFeatures = [
   },
   {
     title: "Wrap Around Balconies",
-    desc: "Let nature surround you — enjoy panoramic seamless views from every angle.",
+    desc: "Let nature surround you: enjoy panoramic seamless views from every angle.",
   },
   {
     title: "Spacious 4 BHK Homes",
@@ -91,7 +91,7 @@ export const residencesFeatures = [
   },
   {
     title: "Scenic Outdoor Dining Space",
-    desc: "Enjoy meals under the open sky — perfect for gatherings or quiet evenings in your outdoor haven.",
+    desc: "Enjoy meals under the open sky, perfect for gatherings or quiet evenings in your outdoor haven.",
   },
   {
     title: "Separate Outdoor Wet Kitchen",
@@ -99,7 +99,7 @@ export const residencesFeatures = [
   },
   {
     title: "4th Bedroom with Dual Access",
-    desc: "Flexible private entry — perfect for guests, staff or a home office; smartly convertible to a 3 BHK + S.",
+    desc: "Flexible private entry, perfect for guests, staff or a home office; smartly convertible to a 3 BHK + S.",
   },
   {
     title: "Smart Home Automation Provision",
@@ -168,7 +168,7 @@ export const amenitiesData: AmenityItem[] = [
       "Serene morning retreat for quiet contemplation, sunrise coffee, and fresh air",
       "Beautiful rooftop sky lounge to host society parties, celebratory galas, and private gatherings",
       "Open-air lounge with fire pits for cozy, warm evenings under the stars",
-      "Rooftop Table Tennis & Fitness Deck — blending wellness with leisure under the sky",
+      "Rooftop Table Tennis & Fitness Deck: blending wellness with leisure under the sky",
       "Panoramic views overlooking lush green parklands and the Shivalik hill foothills",
     ],
   },
@@ -187,7 +187,7 @@ export const amenitiesData: AmenityItem[] = [
     ],
     bullets: [
       "MIVAN construction offers smooth, crack-free walls and ceilings with flawless aesthetics",
-      "Monolithic concrete structure means fewer joints — greatly reducing chances of water leakage and dampness over time",
+      "Monolithic concrete structure means fewer joints, greatly reducing chances of water leakage and dampness over time",
       "The structure is stronger and more earthquake-resistant, ensuring lasting safety",
       "Thinner walls = more carpet area, giving you extra room to breathe and live",
       "Solid concrete walls don't chip or crack like brick walls, keeping your home looking new for years",
@@ -376,7 +376,7 @@ export const specificationsData: SpecificationCategory[] = [
     items: [
       "Imported marble flooring across all living, entrance lobby, and main passage areas.",
       "Acrylic emulsion paint on all walls and ceilings with smooth designer finish.",
-      "Generous space with thoughtfully planned areas for living, entertaining, and privacy — all in perfect balance.",
+      "Generous space with thoughtfully planned areas for living, entertaining, and privacy in perfect balance.",
       "Direct integration with expansive park-facing wrap-around balconies.",
     ],
   },
@@ -397,7 +397,7 @@ export const specificationsData: SpecificationCategory[] = [
       "Laminated wooden flooring in all secondary bedrooms.",
       "Acrylic emulsion paint on walls and ceiling with refined finishes.",
       "Modular cupboards in each bedroom balancing style with daily practicality.",
-      "4th Bedroom features flexible Dual Access: allows private entry — perfect for guest suite, staff, or a private home office.",
+      "4th Bedroom features flexible Dual Access: allows private entry, perfect for guest suite, staff, or a private home office.",
       "Smartly planned to be easily convertible to a 3 BHK + S as family needs evolve.",
     ],
   },
@@ -431,7 +431,7 @@ export const specificationsData: SpecificationCategory[] = [
       "MIVAN monolithic concrete construction delivering smooth, crack-free walls, thinner walls for maximum carpet area, and damp-resistant durability.",
       "The Adaptive Terrace: beautiful rooftop sky lounge, open-air lounge with fire pits, and rooftop table tennis & fitness deck.",
       "Swimming pool equipped with the latest ultra-filtration system ensuring exceptional water purity and hygiene at all times.",
-      "Pre-certified green building — eco-conscious, energy-efficient, and future-ready.",
+      "Pre-certified green building: eco-conscious, energy-efficient, and future-ready.",
       "Multi-tier round-the-clock security surveillance, access control, and smart home automation provisions.",
     ],
   },
@@ -452,7 +452,7 @@ export const developerData = {
   description:
     "SR Paryavaran Engineers (SRP) is a 35-year-old, family-owned enterprise with a proven track record of delivering over 4,000 successful construction projects. Known for its pioneering work in advanced environmental control systems, SRP has treated more than 6 billion litres of water through its in-house innovations and engineering excellence.",
   teamSummary:
-    "With two modern manufacturing units and a multidisciplinary in-house team of over 350 experts, SRP integrates deep domain knowledge across civil, electrical, and automation disciplines—ensuring uncompromising quality and seamless project execution.",
+    "With two modern manufacturing units and a multidisciplinary in-house team of over 350 experts, SRP integrates deep domain knowledge across civil, electrical, and automation disciplines, ensuring uncompromising quality and seamless project execution.",
   stats: [
     { value: "35+", label: "Years of Heritage", sub: "Family-Owned Enterprise" },
     { value: "4,000+", label: "Successful Projects", sub: "Proven Construction Track Record" },

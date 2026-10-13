@@ -11,28 +11,28 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
   const sliderItems = [
     {
       src: "/assets/sukhavas/amenities_1.webp",
-      fallback: "/assets/sukhavas/amenities_1.png",
+      fallback: "/assets/sukhavas/amenities_1.webp",
       title: "Ultra-Filtration Swimming Pool & Wellness Centre",
       subtitle: "Equipped with the latest ultra-filtration system ensuring exceptional water purity and hygiene at all times, with sauna & steam experiences.",
       category: "LIFESTYLE & AMENITIES",
     },
     {
       src: "/assets/sukhavas/amenities_2.webp",
-      fallback: "/assets/sukhavas/amenities_2.jpg",
+      fallback: "/assets/sukhavas/amenities_2.webp",
       title: "Gym with Pilates & Yoga Meditation Deck",
       subtitle: "State-of-the-art gym outfitted with latest cardio, strength, functional & Pilates training equipment.",
       category: "FITNESS ACTIVITIES",
     },
     {
       src: "/assets/sukhavas/amenities_3.webp",
-      fallback: "/assets/sukhavas/amenities_3.jpg",
+      fallback: "/assets/sukhavas/amenities_3.webp",
       title: "The Adaptive Terrace: A Sky Lounge for Every Need",
       subtitle: "Open-air lounge with fire pits for cozy evenings, society party terrace, and rooftop Table Tennis & fitness deck.",
       category: "THE ADAPTIVE TERRACE",
     },
     {
       src: "/assets/sukhavas/amenities_4.webp",
-      fallback: "/assets/sukhavas/amenities_4.png",
+      fallback: "/assets/sukhavas/amenities_4.webp",
       title: "MIVAN Monolithic Concrete Construction",
       subtitle: "Smooth crack-free walls and ceilings, fewer joints reducing dampness, earthquake-resistant safety, and more carpet area.",
       category: "CONSTRUCTION EXCELLENCE",
@@ -72,7 +72,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
           {/* Right Description & Book Now CTA */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal">
-              Wellness centre / Clubhouse with premium sauna and steam experiences — designed to relax your body, refresh your mind and elevate your everyday living. Equipped with an ultra-filtration swimming pool, elegant reception lounge, and dedicated kids play area.
+              Wellness centre / Clubhouse with premium sauna and steam experiences, designed to relax your body, refresh your mind and elevate your everyday living. Equipped with an ultra-filtration swimming pool, elegant reception lounge, and dedicated kids play area.
             </p>
             <div>
               <button

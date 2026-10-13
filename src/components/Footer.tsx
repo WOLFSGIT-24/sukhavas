@@ -28,11 +28,11 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div className="space-y-4 max-w-xl">
             <img
               src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
-              alt="Sukhavas - Legacy of Elegance"
+              alt="Sukhavas: Legacy of Elegance"
               className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
             />
             <p className="text-xl sm:text-2xl md:text-3xl font-display font-normal text-white/95 tracking-tight leading-snug">
-              Sukhavas — Legacy of Elegance. A contemporary residential landmark in Panchkula.
+              Sukhavas: Legacy of Elegance. A contemporary residential landmark in Panchkula.
             </p>
             <p className="text-xs text-[#E6C7A8] tracking-widest uppercase font-medium">
               Sukh (सुख): Joy & Comfort • Avas (आवास): Abode
@@ -126,7 +126,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
         <div className="pt-8 sm:pt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-white/50">
           <div>
             <p className="text-[11px] text-white/50 max-w-2xl font-body">
-              HRERA Registration: <strong>HRERA-PKL-PKL-689-2025</strong>. All plans, images, and specifications are conceptual and subject to statutory approvals. Sukhavas — Legacy of Elegance.
+              HRERA Registration: <strong>HRERA-PKL-PKL-689-2025</strong>. All plans, images, and specifications are conceptual and subject to statutory approvals. Sukhavas: Legacy of Elegance.
             </p>
           </div>
 

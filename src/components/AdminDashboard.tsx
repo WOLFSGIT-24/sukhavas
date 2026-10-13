@@ -55,7 +55,7 @@ export default function AdminDashboard({
             </div>
             <div>
               <h3 className="font-display text-lg sm:text-xl font-bold tracking-tight">
-                Sukhavas Pvt. Ltd. — Sales Console
+                Sukhavas Pvt. Ltd. | Sales Console
               </h3>
               <p className="text-[10px] text-[#DED4C4] uppercase tracking-widest font-bold font-body">
                 Sukhavas Lead Pipeline & Walkthrough Appointments

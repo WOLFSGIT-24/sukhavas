@@ -4,25 +4,25 @@ import { ZoomIn, X } from "lucide-react";
 const galleryImages = [
   {
     src: "/assets/sukhavas/1.webp",
-    fallback: "/assets/sukhavas/1.png",
+    fallback: "/assets/sukhavas/1.webp",
     title: "100% Park-Facing Panoramic View",
     category: "Nature & Panoramic Greens",
   },
   {
     src: "/assets/sukhavas/2.webp",
-    fallback: "/assets/sukhavas/2.png",
+    fallback: "/assets/sukhavas/2.webp",
     title: "Illuminated Tower Night Elevation",
     category: "Landmark Architecture",
   },
   {
     src: "/assets/sukhavas/3.webp",
-    fallback: "/assets/sukhavas/3.png",
+    fallback: "/assets/sukhavas/3.webp",
     title: "Wrap-Around Balcony Living at Sunset",
     category: "Exclusive Residences",
   },
   {
     src: "/assets/sukhavas/4.webp",
-    fallback: "/assets/sukhavas/4.png",
+    fallback: "/assets/sukhavas/4.webp",
     title: "Iconic Daytime Architecture",
     category: "Contemporary Facade",
   },
@@ -51,7 +51,7 @@ export default function Gallery() {
           {/* Right Description */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-[#4E4449] leading-relaxed font-normal font-body">
-              Generous space with thoughtfully designed areas for living, entertaining and privacy — all in perfect balance. High end finishes that blend beauty with functionality across every square foot.
+              Generous space with thoughtfully designed areas for living, entertaining and privacy in perfect balance. High end finishes that blend beauty with functionality across every square foot.
             </p>
           </div>
 
