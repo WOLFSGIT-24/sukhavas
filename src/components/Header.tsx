@@ -10,7 +10,6 @@ interface HeaderProps {
 export default function Header({ onOpenBooking }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +23,6 @@ export default function Header({ onOpenBooking }: HeaderProps) {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    setPagesDropdownOpen(false);
     const el = document.getElementById(id);
     if (el) {
       const offset = 80;
@@ -85,31 +83,8 @@ export default function Header({ onOpenBooking }: HeaderProps) {
               </a>
             ))}
 
-            {/* Dropdown Menu for Extra Pages */}
-            <div className="relative">
-              <button
-                onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
-                className="flex items-center gap-1 font-body text-sm font-medium text-white/90 hover:text-[#E6C7A8] transition-colors tracking-wide cursor-pointer focus:outline-none"
-              >
-                <span>More</span>
-                <svg className="h-4 w-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              {pagesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-[#23121E] rounded-xl shadow-2xl border border-[#DED4C4]/20 py-2 animate-fade-in z-50">
-                  <a
-                    href="#gallery"
-                    onClick={(e) => handleLinkClick(e, "gallery")}
-                    className="block px-4 py-2 text-xs font-body text-white/80 hover:bg-white/10 hover:text-white"
-                  >
-                    Living Gallery
-                  </a>
-                </div>
-              )}
-            </div>
           </nav>
+
 
           {/* Right Action Button: Sleek Dark Pill button */}
           <div className="flex items-center gap-2 sm:gap-3">
