@@ -115,13 +115,11 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Designed to Relax Your Body, Refresh Your Mind & Elevate Living",
     description:
       "A boutique residential community designed around tranquility, well-being, and effortless sophistication.",
-    imageUrl: "/assets/silver_horizon/indoor_pool.webp",
+    imageUrl: "/assets/sukhavas/amenities_1.webp",
     images: [
-      "/assets/silver_horizon/indoor_pool.webp",
-      "/assets/silver_horizon/wellness_pool.webp",
-      "/assets/silver_horizon/grand_lobby.webp",
-      "/assets/silver_horizon/kids_play_area.webp",
-      "/assets/silver_horizon/pet_park.webp",
+      "/assets/sukhavas/amenities_1.webp",
+      "/assets/sukhavas/1.webp",
+      "/assets/sukhavas/3.webp",
     ],
     bullets: [
       "Swimming pool equipped with the latest ultra-filtration system ensuring exceptional water purity and hygiene at all times",
@@ -139,12 +137,11 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Modern Wellness Centre for Holistic Health",
     description:
       "State-of-the-art facilities crafted to support every fitness ambition, active movement, and mindful recovery.",
-    imageUrl: "/assets/silver_horizon/indoor_gym.webp",
+    imageUrl: "/assets/sukhavas/amenities_2.webp",
     images: [
-      "/assets/silver_horizon/indoor_gym.webp",
-      "/assets/silver_horizon/sport_basketball.webp",
-      "/assets/silver_horizon/wellness_pool.webp",
-      "/assets/silver_horizon/swing_court.webp",
+      "/assets/sukhavas/amenities_2.webp",
+      "/assets/sukhavas/amenities_1.webp",
+      "/assets/sukhavas/3.webp",
     ],
     bullets: [
       "Modern Wellness Centre dedicated to holistic health and physical vitality",
@@ -161,12 +158,11 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "From Serene Morning Retreats to Cozy Starlit Evenings",
     description:
       "An exclusive open-air rooftop sanctuary where leisure, wellness, and celebration blend harmoniously under the sky.",
-    imageUrl: "/assets/silver_horizon/balcony_sunset_panorama.webp",
+    imageUrl: "/assets/sukhavas/amenities_3.webp",
     images: [
-      "/assets/silver_horizon/balcony_sunset_panorama.webp",
-      "/assets/silver_horizon/pavilion_amphitheatre.webp",
-      "/assets/silver_horizon/night_tower_landmark.webp",
-      "/assets/silver_horizon/swing_court.webp",
+      "/assets/sukhavas/amenities_3.webp",
+      "/assets/sukhavas/3.webp",
+      "/assets/sukhavas/2.webp",
     ],
     bullets: [
       "Serene morning retreat for quiet contemplation, sunrise coffee, and fresh air",
@@ -183,12 +179,11 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "MIVAN Monolithic Concrete Technology",
     description:
       "Engineered using global monolithic concrete shuttering for crack-free durability, superior safety, and lasting home value.",
-    imageUrl: "/assets/silver_horizon/tower_day_view.webp",
+    imageUrl: "/assets/sukhavas/amenities_4.webp",
     images: [
-      "/assets/silver_horizon/tower_day_view.webp",
-      "/assets/silver_horizon/ev_charging.webp",
-      "/assets/silver_horizon/building_slide_01.webp",
-      "/assets/silver_horizon/building_slide_03.webp",
+      "/assets/sukhavas/amenities_4.webp",
+      "/assets/sukhavas/4.webp",
+      "/assets/sukhavas/2.webp",
     ],
     bullets: [
       "MIVAN construction offers smooth, crack-free walls and ceilings with flawless aesthetics",

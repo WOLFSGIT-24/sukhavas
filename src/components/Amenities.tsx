@@ -10,25 +10,29 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
   // Curated slider items matching the 4 key sections from Sukhavas PDF Brochure
   const sliderItems = [
     {
-      src: "/assets/silver_horizon/amenities_slide_03.webp",
+      src: "/assets/sukhavas/amenities_1.webp",
+      fallback: "/assets/sukhavas/amenities_1.png",
       title: "Ultra-Filtration Swimming Pool & Wellness Centre",
       subtitle: "Equipped with the latest ultra-filtration system ensuring exceptional water purity and hygiene at all times, with sauna & steam experiences.",
       category: "LIFESTYLE & AMENITIES",
     },
     {
-      src: "/assets/silver_horizon/amenities_slide_02.webp",
+      src: "/assets/sukhavas/amenities_2.webp",
+      fallback: "/assets/sukhavas/amenities_2.jpg",
       title: "Gym with Pilates & Yoga Meditation Deck",
       subtitle: "State-of-the-art gym outfitted with latest cardio, strength, functional & Pilates training equipment.",
       category: "FITNESS ACTIVITIES",
     },
     {
-      src: "/assets/silver_horizon/amenities_slide_01.webp",
+      src: "/assets/sukhavas/amenities_3.webp",
+      fallback: "/assets/sukhavas/amenities_3.jpg",
       title: "The Adaptive Terrace: A Sky Lounge for Every Need",
       subtitle: "Open-air lounge with fire pits for cozy evenings, society party terrace, and rooftop Table Tennis & fitness deck.",
       category: "THE ADAPTIVE TERRACE",
     },
     {
-      src: "/assets/silver_horizon/tower_day_view.webp",
+      src: "/assets/sukhavas/amenities_4.webp",
+      fallback: "/assets/sukhavas/amenities_4.png",
       title: "MIVAN Monolithic Concrete Construction",
       subtitle: "Smooth crack-free walls and ceilings, fewer joints reducing dampness, earthquake-resistant safety, and more carpet area.",
       category: "CONSTRUCTION EXCELLENCE",
@@ -96,12 +100,15 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
                 idx === currentIdx ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
               }`}
             >
-              <img
-                src={item.src}
-                alt={item.title}
-                loading={idx === 0 ? "eager" : "lazy"}
-                className="w-full h-full object-cover transform transition-transform duration-7000 ease-out scale-100 hover:scale-105"
-              />
+              <picture className="w-full h-full block">
+                <source srcSet={item.src} type="image/webp" />
+                <img
+                  src={item.fallback || item.src}
+                  alt={item.title}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  className="w-full h-full object-cover transform transition-transform duration-7000 ease-out scale-100 hover:scale-105"
+                />
+              </picture>
               {/* Subtle ambient bottom gradient for captions */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
             </div>
