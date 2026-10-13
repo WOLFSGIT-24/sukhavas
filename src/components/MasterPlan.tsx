@@ -52,12 +52,15 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             onClick={() => setModalOpen(true)}
             className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] bg-[#FAF8F5] rounded-xl sm:rounded-2xl overflow-hidden flex items-center justify-center cursor-pointer border border-gray-100"
           >
-            <img
-              src="/assets/silver_horizon/master_plan_layout.webp"
-              alt="Sukhavas Master Plan Blueprint"
-              loading="lazy"
-              className="w-full h-full object-contain p-2 sm:p-6 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-            />
+            <picture className="w-full h-full flex items-center justify-center">
+              <source srcSet="/assets/sukhavas/Master%20Plan.webp" type="image/webp" />
+              <img
+                src="/assets/sukhavas/Master%20Plan.png"
+                alt="Sukhavas Master Plan Blueprint"
+                loading="lazy"
+                className="w-full h-full object-contain p-2 sm:p-6 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              />
+            </picture>
 
             {/* Subtle Zoom Hint on Hover */}
             <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
@@ -113,11 +116,14 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             </div>
 
             <div className="overflow-auto flex-1 my-4 flex items-center justify-center bg-[#FAF8F5] p-2 sm:p-6 rounded-xl border border-gray-100">
-              <img
-                src="/assets/silver_horizon/master_plan_layout.webp"
-                alt="Sukhavas Full Master Plan"
-                className="max-w-full max-h-[70vh] object-contain"
-              />
+              <picture className="max-w-full max-h-[70vh] flex items-center justify-center">
+                <source srcSet="/assets/sukhavas/Master%20Plan.webp" type="image/webp" />
+                <img
+                  src="/assets/sukhavas/Master%20Plan.png"
+                  alt="Sukhavas Full Master Plan"
+                  className="max-w-full max-h-[70vh] object-contain"
+                />
+              </picture>
             </div>
 
             <div className="flex justify-between items-center pt-2">
