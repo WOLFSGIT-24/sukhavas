@@ -64,7 +64,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               A Sanctuary Beyond Walls
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
               Lifestyle & Amenities
             </h2>
           </div>

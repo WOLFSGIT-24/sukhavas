@@ -45,10 +45,10 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
 
           {/* Large Headline */}
           <h1 
-            className="font-display text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.12] drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
+            className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.08] drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
           >
             SUKHAVAS <br className="hidden sm:inline" />
-            <span className="italic font-light">Legacy of Elegance</span>
+            <span className="italic font-normal">Legacy of Elegance</span>
           </h1>
 
           {/* Location, Specification, Price */}

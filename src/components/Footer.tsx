@@ -31,7 +31,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
               alt="Sukhavas: Legacy of Elegance"
               className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
             />
-            <p className="text-xl sm:text-2xl md:text-3xl font-display font-normal text-white/95 tracking-tight leading-snug">
+            <p className="text-xl sm:text-2xl md:text-3xl font-display font-bold text-white/95 tracking-tight leading-snug">
               Sukhavas: Legacy of Elegance. A contemporary residential landmark in Panchkula.
             </p>
             <p className="text-xs text-[#E6C7A8] tracking-widest uppercase font-medium">

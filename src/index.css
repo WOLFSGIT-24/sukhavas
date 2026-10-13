@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* Local ivyora / IvyOra Display declarations for systems with brand font */
+@font-face {
+  font-family: "ivyora";
+  src: local("ivyora"), local("IvyOra"), local("IvyOra Display"), local("IvyOra-Display"), local("IvyOraDisplay-Bold"), local("IvyOraDisplay-Regular");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IvyOra Display";
+  src: local("IvyOra Display"), local("IvyOraDisplay-Bold"), local("IvyOra-Display"), local("IvyOra"), local("ivyora");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
 @theme {
   /* Sukhavas Brand Palette (from Brand Guidelines) */
   /* Primary Deep Dark Plum / Blackish Burgundy (C-57 M-77 Y-64 K-75) */
@@ -40,9 +55,12 @@
   --color-charcoal: #1b0e17;
   --color-gray-text: #4e4449;
   
-  /* Typography per Brand Guidelines (Primary: ivyora / Playfair Display, Secondary: Montserrat) */
-  --font-display: "ivyora", "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-serif-luxury: "ivyora", "Playfair Display", Georgia, serif;
+  /* Typography per Brand Guidelines */
+  /* Primary Typeface: ivyora (For Display, Headings and Sub-headings) */
+  --font-display: "ivyora", "IvyOra Display", "IvyOra", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-serif-luxury: "ivyora", "IvyOra Display", "IvyOra", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  
+  /* Secondary Typeface: Montserrat (For Body Copy and Captions) */
   --font-body: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   
@@ -71,17 +89,36 @@ body {
   color: var(--color-charcoal);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.015em;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: "ivyora", "Playfair Display", Georgia, serif;
-  text-transform: capitalize;
+/* Headings per Brand Guidelines: Primary Typeface - ivyora (Bold) */
+h1 {
+  font-family: "ivyora", "IvyOra Display", "IvyOra", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: "ivyora", "IvyOra Display", "IvyOra", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-weight: 700;
   letter-spacing: -0.015em;
 }
 
-h4, h5, h6 {
-  text-transform: capitalize;
+/* Subheadings per Brand Guidelines: Primary Typeface - ivyora (Bold 26pt) */
+h3, h4 {
+  font-family: "ivyora", "IvyOra Display", "IvyOra", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Captions per Brand Guidelines: Secondary Typeface - Montserrat (Kerning 50pt) */
+h5, h6 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* Custom Scrollbar */

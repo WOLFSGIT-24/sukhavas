@@ -125,7 +125,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 <span className="text-[10px] uppercase font-semibold tracking-widest text-[#655335] block font-body">
                   A New Standard in Boutique Luxury Living
                 </span>
-                <h3 className="text-2xl font-display font-normal text-[#1B0E17] leading-tight tracking-tight capitalize">
+                <h3 className="text-2xl font-display font-bold text-[#1B0E17] leading-tight tracking-tight capitalize">
                   Schedule Your Private Tour
                 </h3>
                 <p className="text-xs text-[#4E4449] leading-relaxed font-normal">

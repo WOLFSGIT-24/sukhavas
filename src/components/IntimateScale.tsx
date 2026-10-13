@@ -42,7 +42,7 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Home of Happiness
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
               About Sukhavas
             </h2>
             <p className="text-sm sm:text-base text-[#655335] font-medium italic font-body leading-relaxed pt-1">
