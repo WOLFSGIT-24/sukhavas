@@ -18,7 +18,7 @@ export default function SukhavasLogo({
       ? "text-white"
       : theme === "gold"
       ? "text-[#E6C7A8]"
-      : "text-[#1B0E17]";
+      : "text-[#211616]";
 
   if (variant === "stacked") {
     return (

@@ -22,7 +22,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-[#1B0E17]/90 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-[#211616]/90 backdrop-blur-sm animate-fade-in">
       <div 
         className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-[#E8E6E3] relative"
         onClick={(e) => e.stopPropagation()}
@@ -30,14 +30,14 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
         {/* Header */}
         <div className="flex justify-between items-center p-6 sm:p-8 border-b border-[#E8E6E3] bg-[#FAF8F5] shrink-0">
           <div>
-            <h2 className="font-display text-2xl sm:text-3xl text-[#1B0E17] font-bold">Privacy Policy</h2>
+            <h2 className="font-display text-2xl sm:text-3xl text-[#211616] font-bold">Privacy Policy</h2>
             <p className="font-body text-xs text-[#655335] mt-1 uppercase tracking-widest font-semibold">
               Sukhavas by SR Paryavaran Engineers (SRP)
             </p>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-[#E8E6E3] text-[#4E4449] hover:text-[#1B0E17] transition-colors focus:outline-none cursor-pointer"
+            className="p-2 rounded-full hover:bg-[#E8E6E3] text-[#4E4449] hover:text-[#211616] transition-colors focus:outline-none cursor-pointer"
             aria-label="Close"
           >
             <X className="h-6 w-6" />
@@ -51,22 +51,22 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
           </p>
 
           <div className="space-y-2">
-            <h3 className="font-display text-lg font-bold text-[#1B0E17]">1. Information We Collect</h3>
+            <h3 className="font-display text-lg font-bold text-[#211616]">1. Information We Collect</h3>
             <p>When you fill an enquiry, request floor plans, or download a brochure, we collect your Name, Phone Number, Email Address, and Unit Configuration preferences.</p>
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-display text-lg font-bold text-[#1B0E17]">2. Use of Information</h3>
+            <h3 className="font-display text-lg font-bold text-[#211616]">2. Use of Information</h3>
             <p>Your details are utilized solely for scheduling site walkthroughs, sharing official project documents, providing price quotations, and answering customer queries regarding Sukhavas.</p>
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-display text-lg font-bold text-[#1B0E17]">3. Data Security & Privacy</h3>
+            <h3 className="font-display text-lg font-bold text-[#211616]">3. Data Security & Privacy</h3>
             <p>We do not sell, trade, or distribute your personal contact information to third parties. All lead submissions are encrypted via secure SSL connections.</p>
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-display text-lg font-bold text-[#1B0E17]">4. Official Developer Contact</h3>
+            <h3 className="font-display text-lg font-bold text-[#211616]">4. Official Developer Contact</h3>
             <ul className="list-none space-y-1.5 text-xs text-[#161A22] bg-[#FAF8F5] p-4 rounded-xl border border-[#E8E6E3]">
               <li><strong>Project:</strong> Sukhavas (3 & 4 BHK Contemporary Luxury Residences)</li>
               <li><strong>Developer:</strong> {projectSnapshot.developerFull}</li>
@@ -81,7 +81,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
         <div className="p-6 border-t border-[#E8E6E3] bg-[#FAF8F5] shrink-0 flex justify-end">
           <button
             onClick={onClose}
-            className="px-6 py-2.5 rounded-lg bg-[#1B0E17] text-white font-body text-xs font-bold tracking-wider uppercase hover:bg-[#271523] transition-colors cursor-pointer"
+            className="px-6 py-2.5 rounded-lg bg-[#211616] text-white font-body text-xs font-bold tracking-wider uppercase hover:bg-[#2e1f1f] transition-colors cursor-pointer"
           >
             Acknowledge & Close
           </button>

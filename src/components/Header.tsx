@@ -52,7 +52,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
       <header
         className={`fixed top-0 left-0 w-full h-20 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#1B0E17]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.25)] border-b border-[#DED4C4]/20"
+            ? "bg-[#211616]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.25)] border-b border-[#DED4C4]/20"
             : "bg-transparent"
         }`}
       >
@@ -90,7 +90,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
           <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={onOpenBooking}
-              className="hidden sm:inline-flex bg-[#1B0E17]/90 hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#DED4C4]/30 hover:border-[#DED4C4]/70 transition-all shadow-md cursor-pointer tracking-wide"
+              className="hidden sm:inline-flex bg-[#211616]/90 hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#DED4C4]/30 hover:border-[#DED4C4]/70 transition-all shadow-md cursor-pointer tracking-wide"
             >
               Enquire Now
             </button>
@@ -98,7 +98,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#1B0E17]/60 backdrop-blur-md"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#211616]/60 backdrop-blur-md"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? (
@@ -117,7 +117,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
 
       {/* Mobile Drawer menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-20 bg-[#1B0E17]/98 backdrop-blur-xl z-40 lg:hidden flex flex-col p-6 sm:p-8 space-y-4 animate-fade-in border-t border-white/10 overflow-y-auto">
+        <div className="fixed inset-0 top-20 bg-[#211616]/98 backdrop-blur-xl z-40 lg:hidden flex flex-col p-6 sm:p-8 space-y-4 animate-fade-in border-t border-white/10 overflow-y-auto">
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
             <img
               src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
@@ -145,7 +145,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full bg-[#271523] text-white font-body text-sm font-semibold py-3.5 rounded-full border border-[#DED4C4]/30 shadow-lg"
+              className="w-full bg-[#2d1e1e] hover:bg-[#382626] text-white font-body text-sm font-semibold py-3.5 rounded-full border border-[#DED4C4]/30 shadow-lg cursor-pointer transition-all"
             >
               Book a Site Visit
             </button>

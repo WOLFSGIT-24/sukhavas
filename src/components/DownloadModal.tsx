@@ -94,12 +94,12 @@ export default function DownloadModal({
   };
 
   return (
-    <div className="fixed inset-0 bg-[#1B0E17]/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+    <div className="fixed inset-0 bg-[#211616]/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative border border-[#E8E6E3] max-h-[92vh] flex flex-col">
         <div className="absolute top-0 left-0 w-full h-[5px] bg-gradient-to-r from-[#DED4C4] to-[#655335]" />
         
         {/* Header bar */}
-        <div className="bg-[#1B0E17] p-5 sm:p-6 text-white flex justify-between items-center shrink-0">
+        <div className="bg-[#211616] p-5 sm:p-6 text-white flex justify-between items-center shrink-0">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-white/10 rounded-lg">
               <Download className="h-5 w-5 text-[#E6C7A8]" />
@@ -132,8 +132,8 @@ export default function DownloadModal({
               </div>
               
               {/* Full Name */}
-              <div className="relative border-b border-gray-200 focus-within:border-[#0E172A] py-1">
-                <label className="text-[9px] font-extrabold text-[#0E172A] uppercase tracking-wider block mb-1">
+              <div className="relative border-b border-gray-200 focus-within:border-[#211616] py-1">
+                <label className="text-[9px] font-extrabold text-[#211616] uppercase tracking-wider block mb-1">
                   Your Full Name
                 </label>
                 <div className="flex items-center gap-2.5">
@@ -154,8 +154,8 @@ export default function DownloadModal({
               </div>
 
               {/* Email Address */}
-              <div className="relative border-b border-gray-200 focus-within:border-[#0E172A] py-1">
-                <label className="text-[9px] font-extrabold text-[#0E172A] uppercase tracking-wider block mb-1">
+              <div className="relative border-b border-gray-200 focus-within:border-[#211616] py-1">
+                <label className="text-[9px] font-extrabold text-[#211616] uppercase tracking-wider block mb-1">
                   Email Address
                 </label>
                 <div className="flex items-center gap-2.5">
@@ -174,13 +174,13 @@ export default function DownloadModal({
               </div>
 
               {/* Phone Number */}
-              <div className="relative border-b border-gray-200 focus-within:border-[#0E172A] py-1">
-                <label className="text-[9px] font-extrabold text-[#0E172A] uppercase tracking-wider block mb-1">
+              <div className="relative border-b border-gray-200 focus-within:border-[#211616] py-1">
+                <label className="text-[9px] font-extrabold text-[#211616] uppercase tracking-wider block mb-1">
                   Active Phone Number
                 </label>
                 <div className="flex items-center gap-2.5">
                   <Phone className="h-4 w-4 text-gray-400" />
-                  <span className="text-xs font-bold text-[#0E172A]">+91</span>
+                  <span className="text-xs font-bold text-[#211616]">+91</span>
                   <input
                     type="tel"
                     id="phone"
@@ -201,7 +201,7 @@ export default function DownloadModal({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 bg-[#1B0E17] hover:bg-[#271523] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
                 >
                   {loading ? (
                     <span className="flex items-center gap-2">
@@ -223,7 +223,7 @@ export default function DownloadModal({
                 <Check className="h-7 w-7" />
               </div>
               <div>
-                <h3 className="font-display text-2xl font-bold text-[#1B0E17]">
+                <h3 className="font-display text-2xl font-bold text-[#211616]">
                   Download Initiated
                 </h3>
                 <p className="font-body text-xs text-[#4E4449] mt-2 max-w-xs mx-auto">

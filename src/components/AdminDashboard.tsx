@@ -44,11 +44,11 @@ export default function AdminDashboard({
   };
 
   return (
-    <div className="fixed inset-0 bg-[#1B0E17]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6 animate-fade-in">
+    <div className="fixed inset-0 bg-[#211616]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-6 animate-fade-in">
       <div className="bg-white rounded-2xl shadow-2xl max-w-5xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-[#E8E6E3]">
         
         {/* Header Console */}
-        <div className="bg-[#1B0E17] p-6 text-white flex justify-between items-center">
+        <div className="bg-[#211616] p-6 text-white flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-white/10 rounded-lg">
               <ClipboardList className="h-5 w-5 text-[#E6C7A8]" />
@@ -76,7 +76,7 @@ export default function AdminDashboard({
             <span className="block text-[9px] font-extrabold text-[#4A5260] uppercase tracking-widest">
               Total Inquiries
             </span>
-            <span className="font-display text-2xl font-bold text-[#0E172A]">{stats.total}</span>
+            <span className="font-display text-2xl font-bold text-[#211616]">{stats.total}</span>
           </div>
           <div className="p-4 border-r border-[#E5DED3] text-center">
             <span className="block text-[9px] font-extrabold uppercase tracking-widest text-amber-600">
@@ -107,8 +107,8 @@ export default function AdminDashboard({
                 onClick={() => setFilter(status as any)}
                 className={`px-3 py-1.5 rounded text-[10px] font-bold tracking-wider uppercase transition-all ${
                   filter === status
-                    ? "bg-[#1B0E17] text-[#E6C7A8] shadow-sm"
-                    : "text-[#4A5260] hover:text-[#1B0E17]"
+                    ? "bg-[#211616] text-[#E6C7A8] shadow-sm"
+                    : "text-[#4A5260] hover:text-[#211616]"
                 }`}
               >
                 {status}
@@ -119,7 +119,7 @@ export default function AdminDashboard({
           <div className="flex gap-2 w-full sm:w-auto justify-end">
             <button
               onClick={onAddMockLeads}
-              className="bg-[#0E172A]/5 hover:bg-[#0E172A]/10 text-[#0E172A] font-body text-[10px] font-extrabold tracking-widest uppercase px-3.5 py-2.5 rounded flex items-center gap-1.5 cursor-pointer"
+              className="bg-[#211616]/5 hover:bg-[#211616]/10 text-[#211616] font-body text-[10px] font-extrabold tracking-widest uppercase px-3.5 py-2.5 rounded flex items-center gap-1.5 cursor-pointer"
             >
               <RefreshCw className="h-3.5 w-3.5" />
               Seed Demo Leads
@@ -151,7 +151,7 @@ export default function AdminDashboard({
             <div className="text-center py-20 bg-white rounded-xl border border-dashed border-[#E5DED3] p-8 space-y-4">
               <ClipboardList className="h-12 w-12 text-gray-300 mx-auto" />
               <div>
-                <span className="block font-display text-base font-semibold text-[#0E172A]">
+                <span className="block font-display text-base font-semibold text-[#211616]">
                   No Inquiries Active
                 </span>
                 <span className="text-xs text-[#4A5260]">
@@ -168,11 +168,11 @@ export default function AdminDashboard({
                 >
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <div className="h-8 w-8 rounded-full bg-[#FAF8F5] flex items-center justify-center text-[#0E172A] shrink-0 border border-[#E5DED3]">
+                      <div className="h-8 w-8 rounded-full bg-[#FAF8F5] flex items-center justify-center text-[#211616] shrink-0 border border-[#E5DED3]">
                         <User className="h-4 w-4" />
                       </div>
                       <div>
-                        <span className="font-display font-semibold text-[#0E172A]">
+                        <span className="font-display font-semibold text-[#211616]">
                           {lead.fullName}
                         </span>
                         <span className="text-[9px] text-gray-400 block -mt-1 font-semibold uppercase">
@@ -199,7 +199,7 @@ export default function AdminDashboard({
 
                   <div className="flex flex-col sm:flex-row md:flex-col justify-between items-end gap-3 self-stretch border-t md:border-t-0 border-gray-100 pt-3 md:pt-0">
                     <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-extrabold text-[#0E172A] uppercase tracking-widest">
+                      <span className="text-[10px] font-extrabold text-[#211616] uppercase tracking-widest">
                         Status:
                       </span>
                       <select

@@ -125,7 +125,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 <span className="text-[10px] uppercase font-semibold tracking-widest text-[#655335] block font-body">
                   A New Standard in Boutique Luxury Living
                 </span>
-                <h3 className="text-2xl font-display font-bold text-[#1B0E17] leading-tight tracking-tight capitalize">
+                <h3 className="text-2xl font-display font-bold text-[#211616] leading-tight tracking-tight capitalize">
                   Schedule Your Private Tour
                 </h3>
                 <p className="text-xs text-[#4E4449] leading-relaxed font-normal">
@@ -136,10 +136,10 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
               <form onSubmit={handleSubmit} className="space-y-3">
                 {/* Full Name */}
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-[#0E172A] uppercase tracking-wider block">
+                  <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">
                     Full Name*
                   </label>
-                  <div className="border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#0E172A] focus-within:bg-white transition-all">
+                  <div className="border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#211616] focus-within:bg-white transition-all">
                     <input
                       type="text"
                       id="fullName"
@@ -157,10 +157,10 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
                 {/* Email Address */}
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-[#0E172A] uppercase tracking-wider block">
+                  <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">
                     Email Address*
                   </label>
-                  <div className="border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#0E172A] focus-within:bg-white transition-all">
+                  <div className="border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#211616] focus-within:bg-white transition-all">
                     <input
                       type="email"
                       id="email"
@@ -176,11 +176,11 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
                 {/* Phone Number */}
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-[#0E172A] uppercase tracking-wider block">
+                  <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">
                     Phone Number*
                   </label>
-                  <div className="flex items-center gap-2 border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#0E172A] focus-within:bg-white transition-all">
-                    <span className="text-xs font-bold text-[#0E172A] border-r border-[#E5DED3] pr-2 shrink-0">+91</span>
+                  <div className="flex items-center gap-2 border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] focus-within:border-[#211616] focus-within:bg-white transition-all">
+                    <span className="text-xs font-bold text-[#211616] border-r border-[#E5DED3] pr-2 shrink-0">+91</span>
                     <input
                       type="tel"
                       id="phone"
@@ -199,14 +199,14 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
                 {/* Unit Preference */}
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-[#0E172A] uppercase tracking-wider block">
+                  <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">
                     Residence Preference
                   </label>
                   <select
                     id="unitType"
                     value={formData.unitType}
                     onChange={handleChange}
-                    className="w-full border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] text-xs sm:text-sm font-body outline-none focus:border-[#0E172A] focus:bg-white"
+                    className="w-full border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] text-xs sm:text-sm font-body outline-none focus:border-[#211616] focus:bg-white"
                   >
                     <option value="4 BHK Luxury Residence (Park-Facing)">4 BHK Luxury Residence (Park-Facing)</option>
                     <option value="4 BHK Dual-Access Suite (Convertible 3 BHK + S)">4 BHK Dual-Access Suite (Convertible 3 BHK + S)</option>
@@ -219,7 +219,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
+                    className="w-full flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
                   >
                     {loading ? (
                       <>
@@ -247,7 +247,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="font-display text-xl sm:text-2xl font-bold text-[#1B0E17]">
+                  <h3 className="font-display text-xl sm:text-2xl font-bold text-[#211616]">
                     Registration Confirmed
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-[#4E4449] leading-relaxed">
@@ -258,7 +258,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                   <button
                     onClick={handleDownloadBrochure}
-                    className="flex items-center justify-center gap-2 bg-[#1B0E17] hover:bg-[#271523] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase px-6 py-3.5 rounded-xl shadow-lg transition-all cursor-pointer"
+                    className="flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase px-6 py-3.5 rounded-xl shadow-lg transition-all cursor-pointer"
                   >
                     <Download className="h-4 w-4 text-[#E6C7A8]" />
                     <span>DOWNLOAD BROCHURE</span>
@@ -266,7 +266,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
                   <button
                     onClick={() => setFormSubmitted(false)}
-                    className="border border-[#1B0E17] text-[#1B0E17] hover:bg-[#1B0E17] hover:text-white font-body text-xs font-bold tracking-widest uppercase px-5 py-3.5 rounded-xl transition-all cursor-pointer"
+                    className="border border-[#211616] text-[#211616] hover:bg-[#211616] hover:text-white font-body text-xs font-bold tracking-widest uppercase px-5 py-3.5 rounded-xl transition-all cursor-pointer"
                   >
                     NEW INQUIRY
                   </button>

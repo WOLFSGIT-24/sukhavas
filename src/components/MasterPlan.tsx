@@ -21,7 +21,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Every Square Foot Designed With Purpose
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               Meticulously Planned Spaces
             </h2>
           </div>
@@ -34,7 +34,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div>
               <button
                 onClick={() => setModalOpen(true)}
-                className="bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
+                className="bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
               >
                 <ZoomIn className="h-4 w-4 text-[#E6C7A8]" />
                 <span>Enlarge Site Plan</span>
@@ -74,7 +74,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           {/* Road Connectivity Footnotes */}
           <div className="mt-6 pt-5 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500 font-medium">
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#1B0E17]" />
+              <span className="w-2 h-2 rounded-full bg-[#211616]" />
               Serene Vicinity of Panchkula, Haryana
             </span>
             <span className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
       {/* High-Resolution Fullscreen Modal */}
       {modalOpen && (
         <div
-          className="fixed inset-0 z-50 bg-[#1B0E17]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fade-in"
+          className="fixed inset-0 z-50 bg-[#211616]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fade-in"
           onClick={() => setModalOpen(false)}
         >
           <div
@@ -99,7 +99,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           >
             <div className="flex justify-between items-center pb-4 border-b border-gray-100">
               <div>
-                <h3 className="text-xl sm:text-2xl font-display font-normal text-[#1B0E17] tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-display font-normal text-[#211616] tracking-tight">
                   Sukhavas: Site Master Plan
                 </h3>
                 <p className="text-xs text-[#655335] font-body mt-0.5">
@@ -132,7 +132,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
               </span>
               <button
                 onClick={() => setModalOpen(false)}
-                className="px-6 py-2.5 bg-black hover:bg-neutral-800 text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
+                className="px-6 py-2.5 bg-[#211616] hover:bg-[#2e1f1f] text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
               >
                 Close
               </button>

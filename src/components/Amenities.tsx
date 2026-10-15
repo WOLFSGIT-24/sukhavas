@@ -64,7 +64,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               A Sanctuary Beyond Walls
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               Lifestyle & Amenities
             </h2>
           </div>
@@ -77,7 +77,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
             <div>
               <button
                 onClick={onOpenBooking}
-                className="bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
+                className="bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
               >
                 Explore Amenities
               </button>
@@ -88,7 +88,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
 
         {/* Large Smooth Auto-Sliding Image Banner matching screenshot */}
         <div
-          className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/10] bg-[#1B0E17] shadow-xl border border-gray-100 group"
+          className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/10] bg-[#211616] shadow-xl border border-gray-100 group"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -153,7 +153,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
                 <span className="text-[10px] uppercase font-semibold tracking-widest text-[#655335] block mb-1">
                   {sec.category}
                 </span>
-                <h4 className="text-lg font-display font-medium text-[#1B0E17] mb-3">
+                <h4 className="text-lg font-display font-medium text-[#211616] mb-3">
                   {sec.title}
                 </h4>
                 <ul className="space-y-2 text-xs text-[#4E4449]">

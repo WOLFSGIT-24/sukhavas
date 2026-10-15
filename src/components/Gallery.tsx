@@ -43,7 +43,7 @@ export default function Gallery() {
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               A Home That Lives As Beautiful As It Looks
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               Curated Living Spaces & Architecture
             </h2>
           </div>
@@ -110,7 +110,7 @@ export default function Gallery() {
       {/* Full Screen Lightbox */}
       {activePhoto && (
         <div
-          className="fixed inset-0 z-50 bg-[#090F1D]/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
+          className="fixed inset-0 z-50 bg-[#211616]/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
           onClick={() => setActivePhoto(null)}
         >
           <div
@@ -119,7 +119,7 @@ export default function Gallery() {
           >
             <div className="flex justify-between items-center p-2 border-b border-gray-100">
               <div>
-                <h3 className="text-xl font-normal text-[#161A22] tracking-tight">
+                <h3 className="text-xl font-normal text-[#211616] tracking-tight">
                   {activePhoto.title}
                 </h3>
                 <span className="text-xs text-gray-500 font-normal uppercase tracking-wider">
@@ -128,13 +128,13 @@ export default function Gallery() {
               </div>
               <button
                 onClick={() => setActivePhoto(null)}
-                className="w-8 h-8 rounded-full bg-[#FAF8F5] hover:bg-[#E5DED3] flex items-center justify-center text-[#0E172A] cursor-pointer"
+                className="w-8 h-8 rounded-full bg-[#FAF8F5] hover:bg-[#E5DED3] flex items-center justify-center text-[#211616] cursor-pointer"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
 
-            <div className="overflow-auto flex-1 my-3 flex items-center justify-center bg-[#090F1D] rounded-xl p-2">
+            <div className="overflow-auto flex-1 my-3 flex items-center justify-center bg-[#211616] rounded-xl p-2">
               <picture className="max-w-full max-h-[68vh] flex items-center justify-center">
                 <source srcSet={activePhoto.src} type="image/webp" />
                 <img

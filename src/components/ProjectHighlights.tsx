@@ -56,7 +56,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           className="absolute top-[6.5%] z-20 -translate-x-1/2 text-center w-[360px] xl:w-[420px] 2xl:w-[460px]"
           style={{ left: "75%" }}
         >
-          <h3 className="text-[11px] lg:text-xs xl:text-sm font-semibold tracking-[0.25em] text-[#1B0E17] uppercase font-body">
+          <h3 className="text-[11px] lg:text-xs xl:text-sm font-semibold tracking-[0.25em] text-[#211616] uppercase font-body">
             THE RESIDENCES & KEY HIGHLIGHTS
           </h3>
         </div>
@@ -69,7 +69,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           
           {/* 1. JUST 30 RESIDENCES */}
           <div className="w-auto translate-x-3 xl:translate-x-5 px-6 lg:px-7 xl:px-8 py-1 lg:py-1.5 xl:py-2 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#1B0E17] font-normal leading-tight">
+            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#211616] font-normal leading-tight">
               JUST 30
             </span>
             <span className="text-[8px] lg:text-[8.5px] xl:text-[9.5px] font-medium uppercase tracking-[0.2em] text-[#4E4449]">
@@ -79,7 +79,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
 
           {/* 2. ONLY 2 HOMES PER FLOOR */}
           <div className="w-auto translate-x-8 lg:translate-x-10 xl:translate-x-13 px-7 lg:px-8 xl:px-10 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#1B0E17] font-normal leading-tight">
+            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#211616] font-normal leading-tight">
               2 HOMES
             </span>
             <span className="text-[8px] lg:text-[8.5px] xl:text-[9.5px] font-medium uppercase tracking-[0.2em] text-[#4E4449]">
@@ -89,14 +89,14 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
 
           {/* 3. SPACIOUS 4 BHK HOMES */}
           <div className="w-auto -translate-x-6 lg:-translate-x-8 xl:-translate-x-11 px-6 lg:px-7 xl:px-8 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17] leading-tight">
+            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#211616] leading-tight">
               SPACIOUS 4 BHK<br />HOMES
             </span>
           </div>
 
           {/* 4. ALL HOMES PARK-FACING */}
           <div className="w-auto translate-x-4 lg:translate-x-5 xl:translate-x-7 px-6 lg:px-7 xl:px-8 py-1 lg:py-1.5 xl:py-2 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#1B0E17] font-normal leading-tight">
+            <span className="font-display text-xl lg:text-2xl xl:text-3xl text-[#211616] font-normal leading-tight">
               100%
             </span>
             <span className="text-[8px] lg:text-[8.5px] xl:text-[9.5px] font-medium uppercase tracking-[0.2em] text-[#4E4449] mt-0.5">
@@ -106,42 +106,42 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
 
           {/* 5. WRAP AROUND BALCONIES */}
           <div className="w-auto -translate-x-8 lg:-translate-x-10 xl:-translate-x-14 px-6 lg:px-7 xl:px-8 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17] leading-tight">
+            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#211616] leading-tight">
               WRAP AROUND<br />BALCONIES
             </span>
           </div>
 
           {/* 6. MIVAN MONOLITHIC CONSTRUCTION */}
           <div className="w-auto translate-x-3 lg:translate-x-4 xl:translate-x-6 px-6 lg:px-7 xl:px-8 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17] leading-tight">
+            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#211616] leading-tight">
               MIVAN MONOLITHIC<br />CONSTRUCTION
             </span>
           </div>
 
           {/* 7. PRE-CERTIFIED GREEN BUILDING */}
           <div className="w-auto -translate-x-7 lg:-translate-x-9 xl:-translate-x-12 px-6 lg:px-7 xl:px-8 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17] leading-tight">
+            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#211616] leading-tight">
               PRE-CERTIFIED<br />GREEN BUILDING
             </span>
           </div>
 
           {/* 8. THE ADAPTIVE TERRACE */}
           <div className="w-auto translate-x-5 lg:translate-x-7 xl:translate-x-10 px-7 lg:px-8 xl:px-10 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex items-center justify-center text-center">
-            <span className="text-[10px] lg:text-[11px] xl:text-[12px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17]">
+            <span className="text-[10px] lg:text-[11px] xl:text-[12px] font-semibold uppercase tracking-[0.2em] text-[#211616]">
               THE ADAPTIVE TERRACE
             </span>
           </div>
 
           {/* 9. ULTRA-FILTRATION SWIMMING POOL */}
           <div className="w-auto -translate-x-9 lg:-translate-x-11 xl:-translate-x-15 px-5 lg:px-6 xl:px-7 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9px] lg:text-[10px] xl:text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B0E17] leading-tight">
+            <span className="text-[9px] lg:text-[10px] xl:text-[11px] font-semibold uppercase tracking-[0.18em] text-[#211616] leading-tight">
               ULTRA-FILTRATION<br />SWIMMING POOL
             </span>
           </div>
 
           {/* 10. 4TH BEDROOM DUAL ACCESS */}
           <div className="w-auto translate-x-3 lg:translate-x-4 xl:translate-x-6 px-6 lg:px-7 xl:px-8 py-1.5 lg:py-2 xl:py-2.5 rounded-full border border-neutral-300/80 bg-white/75 backdrop-blur-md shadow-sm hover:shadow hover:bg-white transition-all duration-300 flex flex-col items-center justify-center text-center">
-            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#1B0E17] leading-tight">
+            <span className="text-[9.5px] lg:text-[10.5px] xl:text-[11.5px] font-semibold uppercase tracking-[0.2em] text-[#211616] leading-tight">
               4TH BEDROOM DUAL ACCESS<br />(CONVERTIBLE 3 BHK + S)
             </span>
           </div>
@@ -194,7 +194,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
         
         {/* Header: THE RESIDENCES */}
         <div className="absolute top-[65.2%] left-0 right-0 z-20 text-center px-4">
-          <h3 className="text-[10.5px] sm:text-xs font-semibold tracking-[0.25em] text-[#1B0E17] uppercase font-body">
+          <h3 className="text-[10.5px] sm:text-xs font-semibold tracking-[0.25em] text-[#211616] uppercase font-body">
             THE RESIDENCES: THOUGHTFULLY EXECUTED
           </h3>
         </div>
@@ -207,19 +207,19 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
             
             {/* Item 1 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="font-display text-sm sm:text-lg text-[#1B0E17] font-normal leading-none">JUST 30</span>
+              <span className="font-display text-sm sm:text-lg text-[#211616] font-normal leading-none">JUST 30</span>
               <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#4E4449] mt-0.5 leading-tight">RESIDENCES</span>
             </div>
 
             {/* Item 2 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="font-display text-xs sm:text-base text-[#1B0E17] font-normal leading-none">2 HOMES</span>
+              <span className="font-display text-xs sm:text-base text-[#211616] font-normal leading-none">2 HOMES</span>
               <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#4E4449] mt-0.5 leading-tight">PER FLOOR</span>
             </div>
 
             {/* Item 3 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">SPACIOUS<br />4 BHK</span>
+              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">SPACIOUS<br />4 BHK</span>
             </div>
 
           </div>
@@ -230,19 +230,19 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
             {/* Item 4 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
               <div className="flex items-baseline justify-center gap-0.5 leading-none">
-                <span className="font-display text-xs sm:text-base text-[#1B0E17] font-normal">100%</span>
+                <span className="font-display text-xs sm:text-base text-[#211616] font-normal">100%</span>
               </div>
               <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#4E4449] mt-0.5 leading-tight">PARK-FACING</span>
             </div>
 
             {/* Item 5 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">WRAP AROUND<br />BALCONIES</span>
+              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">WRAP AROUND<br />BALCONIES</span>
             </div>
 
             {/* Item 6 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">MIVAN<br />STRUCTURE</span>
+              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">MIVAN<br />STRUCTURE</span>
             </div>
 
           </div>
@@ -252,17 +252,17 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
             
             {/* Item 7 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">GREEN<br />BUILDING</span>
+              <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">GREEN<br />BUILDING</span>
             </div>
 
             {/* Item 8 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[7.5px] sm:text-[9px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">ADAPTIVE<br />TERRACE</span>
+              <span className="text-[7.5px] sm:text-[9px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">ADAPTIVE<br />TERRACE</span>
             </div>
 
             {/* Item 9 */}
             <div className="h-full px-1 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/85 backdrop-blur-md shadow-sm flex flex-col items-center justify-center text-center">
-              <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">ULTRA-FILTER<br />POOL</span>
+              <span className="text-[6.5px] sm:text-[8px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">ULTRA-FILTER<br />POOL</span>
             </div>
 
           </div>
@@ -270,7 +270,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           {/* Row 4: Centered 10th Item */}
           <div className="w-full flex justify-center h-[20%]">
             <div className="w-auto min-w-[150px] sm:min-w-[180px] h-full px-4 py-1 rounded-xl sm:rounded-2xl border border-neutral-300/85 bg-white/90 backdrop-blur-md shadow-sm flex items-center justify-center text-center">
-              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#1B0E17] leading-tight">DUAL ACCESS 4TH BEDROOM (3 BHK + S)</span>
+              <span className="text-[7px] sm:text-[8.5px] font-semibold uppercase tracking-wider text-[#211616] leading-tight">DUAL ACCESS 4TH BEDROOM (3 BHK + S)</span>
             </div>
           </div>
 

@@ -9,7 +9,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
   return (
     <section
       id="overview"
-      className="relative w-full min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center text-center overflow-hidden bg-[#1B0E17]"
+      className="relative w-full min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center text-center overflow-hidden bg-[#211616]"
     >
       {/* Background Photography - Instant High-Priority LCP Render */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -28,7 +28,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
         </picture>
 
         {/* Soft subtle plum & vignette gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1B0E17]/60 via-transparent to-[#1B0E17]/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#211616]/60 via-transparent to-[#211616]/40 pointer-events-none" />
       </div>
 
       {/* Upper Empty Spacer for Fixed Header */}
@@ -39,7 +39,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
         <div className="max-w-xl lg:max-w-2xl text-left flex flex-col items-start space-y-2.5 sm:space-y-6">
           
           {/* Badge: A New Standard in Boutique Luxury Living */}
-          <div className="inline-flex items-center gap-2 bg-[#1B0E17]/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#DED4C4]/30 text-[#E6C7A8] text-[10px] sm:text-[11px] font-medium tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 bg-[#211616]/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#DED4C4]/30 text-[#E6C7A8] text-[10px] sm:text-[11px] font-medium tracking-widest uppercase">
             <span>A New Standard in Boutique Luxury Living • HRERA-PKL-PKL-689-2025</span>
           </div>
 
@@ -64,7 +64,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           >
             <button
               onClick={onOpenEnquiry}
-              className="bg-[#1B0E17]/95 hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-[#DED4C4]/30 hover:border-[#DED4C4]/70 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.4)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+              className="bg-[#211616]/95 hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-[#DED4C4]/30 hover:border-[#DED4C4]/70 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.4)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
             >
               Explore Sukhavas
             </button>

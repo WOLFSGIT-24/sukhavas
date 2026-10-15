@@ -154,7 +154,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#1B0E17] text-[#161A22] overflow-x-hidden w-full font-body">
+    <div className="relative min-h-screen bg-[#211616] text-[#161A22] overflow-x-hidden w-full font-body">
       {/* Upper Navigation Header */}
       <Header
         onOpenBooking={() => {
@@ -173,7 +173,7 @@ export default function App() {
       />
 
       {/* Below-the-fold sections loaded asynchronously */}
-      <Suspense fallback={<div className="min-h-screen bg-[#1B0E17]" />}>
+      <Suspense fallback={<div className="min-h-screen bg-[#211616]" />}>
         {/* Property Architecture & Landmark Overview */}
         <IntimateScale 
           onRequestDownload={handleRequestDownload} 
@@ -224,10 +224,10 @@ export default function App() {
       </Suspense>
 
       {/* Fixed Mobile Bottom CTA Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1B0E17] border-t border-[#DED4C4]/30 p-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex items-center gap-2.5">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#211616] border-t border-[#DED4C4]/30 p-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex items-center gap-2.5">
         <a 
           href="tel:+917696769007" 
-          className="flex-1 flex items-center justify-center gap-2 bg-[#271523] hover:bg-[#321C2B] text-white font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all border border-white/10 active:scale-[0.98]"
+          className="flex-1 flex items-center justify-center gap-2 bg-[#2d1e1e] hover:bg-[#382626] text-white font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all border border-white/10 active:scale-[0.98]"
         >
           <svg className="h-4 w-4 text-[#DED4C4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -239,7 +239,7 @@ export default function App() {
             setPreselectedUnit(null);
             setOfferOpen(true);
           }}
-          className="flex-1 flex items-center justify-center bg-[#DED4C4] hover:bg-[#E6C7A8] text-[#1B0E17] font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
+          className="flex-1 flex items-center justify-center bg-[#DED4C4] hover:bg-[#E6C7A8] text-[#211616] font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
         >
           <span>Enquire Now</span>
         </button>

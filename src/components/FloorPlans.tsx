@@ -85,7 +85,7 @@ export default function FloorPlans({
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Thoughtfully Chosen, Beautifully Executed
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal tracking-tight text-[#211616] leading-[1.15]">
               The Residences
             </h2>
           </div>
@@ -101,7 +101,7 @@ export default function FloorPlans({
                   if (onOpenBooking) onOpenBooking();
                   else onUnlockRequest();
                 }}
-                className="bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
+                className="bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
               >
                 View Residence Floor Plans
               </button>
@@ -126,7 +126,7 @@ export default function FloorPlans({
               >
                 {/* Top-Right Floating Pill Badge */}
                 <div className="relative z-10 flex justify-end">
-                  <span className="bg-[#0E172A] text-white text-[11px] sm:text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm">
+                  <span className="bg-[#211616] text-white text-[11px] sm:text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm">
                     {item.tag}
                   </span>
                 </div>

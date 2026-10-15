@@ -107,21 +107,21 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 animate-fade-in">
       <div 
-        className="absolute inset-0 bg-[#1B0E17]/80 backdrop-blur-sm"
+        className="absolute inset-0 bg-[#211616]/80 backdrop-blur-sm"
         onClick={onClose}
       />
       
       <div className="relative w-full max-w-[440px] bg-white rounded-2xl shadow-2xl overflow-hidden border border-[#E8E6E3] z-10 max-h-[92vh] flex flex-col">
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 text-[#4E4449] hover:text-[#1B0E17] p-1.5 rounded-full bg-[#FAF8F5] hover:bg-[#E8E6E3] transition-colors z-20"
+          className="absolute top-4 right-4 text-[#4E4449] hover:text-[#211616] p-1.5 rounded-full bg-[#FAF8F5] hover:bg-[#E8E6E3] transition-colors z-20"
         >
           <X className="h-4 w-4" />
         </button>
 
         {!submitted ? (
           <form onSubmit={handleSubmit} className="flex flex-col overflow-y-auto">
-            <div className="p-5 sm:p-7 pb-4 bg-[#1B0E17] text-white border-b border-white/10 shrink-0">
+            <div className="p-5 sm:p-7 pb-4 bg-[#211616] text-white border-b border-white/10 shrink-0">
               <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#E6C7A8]">
                 SR Paryavaran Engineers (SRP)
               </span>
@@ -135,7 +135,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
 
             <div className="p-5 sm:p-7 space-y-3.5 overflow-y-auto">
               <div className="space-y-1">
-                <label className="block text-xs font-bold font-body text-[#0E172A]">
+                <label className="block text-xs font-bold font-body text-[#211616]">
                   Full Name*
                 </label>
                 <input
@@ -148,13 +148,13 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
                   placeholder="Enter your full name"
                   pattern="[A-Za-z\s]+"
                   title="Please enter letters only"
-                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#0E172A] focus:bg-white font-body"
+                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#211616] focus:bg-white font-body"
                 />
                 {errors.fullName && <p className="text-red-500 text-[10px]">{errors.fullName}</p>}
               </div>
 
               <div className="space-y-1">
-                <label className="block text-xs font-bold font-body text-[#0E172A]">
+                <label className="block text-xs font-bold font-body text-[#211616]">
                   Email Address*
                 </label>
                 <input
@@ -165,17 +165,17 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email address"
-                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#0E172A] focus:bg-white font-body"
+                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#211616] focus:bg-white font-body"
                 />
                 {errors.email && <p className="text-red-500 text-[10px]">{errors.email}</p>}
               </div>
 
               <div className="space-y-1">
-                <label className="block text-xs font-bold font-body text-[#0E172A]">
+                <label className="block text-xs font-bold font-body text-[#211616]">
                   Phone Number*
                 </label>
-                <div className="flex items-center border border-[#E5DED3] rounded-lg px-3.5 py-2.5 bg-[#FAF8F5] focus-within:border-[#0E172A] focus-within:bg-white">
-                  <span className="text-xs font-bold text-[#0E172A] border-r border-[#E5DED3] pr-2 mr-2">+91</span>
+                <div className="flex items-center border border-[#E5DED3] rounded-lg px-3.5 py-2.5 bg-[#FAF8F5] focus-within:border-[#211616] focus-within:bg-white">
+                  <span className="text-xs font-bold text-[#211616] border-r border-[#E5DED3] pr-2 mr-2">+91</span>
                   <input
                     type="tel"
                     id="phone"
@@ -194,14 +194,14 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
               </div>
 
               <div className="space-y-1">
-                <label className="block text-xs font-bold font-body text-[#0E172A]">
+                <label className="block text-xs font-bold font-body text-[#211616]">
                   Residence Configuration
                 </label>
                 <select
                   name="unitPreference"
                   value={formData.unitPreference}
                   onChange={handleChange}
-                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#0E172A] focus:bg-white font-body"
+                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#211616] focus:bg-white font-body"
                 >
                   <option value="4 BHK Luxury Residence (Park-Facing)">4 BHK Luxury Residence (Park-Facing)</option>
                   <option value="4 BHK Dual-Access Suite (Convertible 3 BHK + S)">4 BHK Dual-Access Suite (Convertible 3 BHK + S)</option>
@@ -212,7 +212,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-[#1B0E17] hover:bg-[#271523] text-[#FAF8F5] font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3 transition-all"
+                className="w-full bg-[#211616] hover:bg-[#2e1f1f] text-[#FAF8F5] font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3 transition-all"
               >
                 {loading ? (
                   <span className="h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
@@ -227,7 +227,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
             <div className="h-14 w-14 bg-green-50 border border-green-200 rounded-full flex items-center justify-center text-green-600 shadow-sm">
               <Check className="h-7 w-7" />
             </div>
-            <h3 className="font-display text-2xl font-bold text-[#1B0E17]">Request Received</h3>
+            <h3 className="font-display text-2xl font-bold text-[#211616]">Request Received</h3>
             <p className="font-body text-xs text-[#4E4449] leading-relaxed max-w-xs">
               Thank you! Our relationship team from SR Paryavaran Engineers (SRP) has received your inquiry and will contact you promptly.
             </p>

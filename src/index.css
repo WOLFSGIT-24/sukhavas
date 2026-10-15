@@ -17,11 +17,11 @@
 
 @theme {
   /* Sukhavas Brand Palette (from Brand Guidelines) */
-  /* Primary Deep Dark Plum / Blackish Burgundy (C-57 M-77 Y-64 K-75) */
-  --color-brand-plum-dark: #1b0e17;
-  --color-brand-plum: #23121e;
-  --color-brand-plum-light: #321c2b;
-  --color-brand-plum-card: #271523;
+  /* Primary Deep Dark Plum / Blackish Burgundy (#211616) */
+  --color-brand-plum-dark: #211616;
+  --color-brand-plum: #211616;
+  --color-brand-plum-light: #2d1e1e;
+  --color-brand-plum-card: #2d1e1e;
   
   /* Primary Neutrals (C-00 M-00 Y-00 K-10 and C-38 M-37 Y-35 K-01) */
   --color-brand-stone-light: #faf8f5;
@@ -37,10 +37,10 @@
   --color-brand-mauve: #68484d;
   
   /* Legacy & Theme Compatibility Aliases */
-  --color-navy-dark: #1b0e17;
-  --color-navy-primary: #23121e;
-  --color-navy-light: #321c2b;
-  --color-navy-card: #271523;
+  --color-navy-dark: #211616;
+  --color-navy-primary: #211616;
+  --color-navy-light: #2d1e1e;
+  --color-navy-card: #2d1e1e;
   
   --color-gold: #ded4c4;
   --color-gold-light: #e6c7a8;
@@ -52,7 +52,7 @@
   --color-marble-light: #ffffff;
   --color-brand-stone-beige: #e8e6e3;
   
-  --color-charcoal: #1b0e17;
+  --color-charcoal: #211616;
   --color-gray-text: #4e4449;
   
   /* Typography per Brand Guidelines */
@@ -127,7 +127,7 @@ h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1b0e17;
+  background: #211616;
 }
 
 ::-webkit-scrollbar-thumb {

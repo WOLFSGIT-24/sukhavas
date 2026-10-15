@@ -42,7 +42,7 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Home of Happiness
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               About Sukhavas
             </h2>
             <p className="text-sm sm:text-base text-[#655335] font-medium italic font-body leading-relaxed pt-1">
@@ -61,7 +61,7 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
             <div className="pt-2">
               <button
                 onClick={onOpenEnquiry}
-                className="bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+                className="bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
               >
                 Explore Sukhavas
               </button>

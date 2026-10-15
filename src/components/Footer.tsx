@@ -20,7 +20,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
   };
 
   return (
-    <footer className="w-full bg-[#1B0E17] text-white pt-14 sm:pt-20 pb-36 md:pb-16 border-t border-[#DED4C4]/20 font-body">
+    <footer className="w-full bg-[#211616] text-white pt-14 sm:pt-20 pb-36 md:pb-16 border-t border-[#DED4C4]/20 font-body">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12">
         
         {/* Top Minimal Brand & CTA Header */}
@@ -42,7 +42,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div>
             <button
               onClick={() => handleScrollTo("lead-capture-section")}
-              className="bg-[#DED4C4] hover:bg-[#E6C7A8] text-[#1B0E17] text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2"
+              className="bg-[#DED4C4] hover:bg-[#E6C7A8] text-[#211616] text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2"
             >
               <span>Book a private tour</span>
               <ArrowUpRight className="h-4 w-4" />

@@ -21,7 +21,7 @@ export default function Specifications() {
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Timeless Design, Infinite Views
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               Luxury Finishes that Reflect Refined Taste
             </h2>
           </div>
@@ -40,7 +40,7 @@ export default function Specifications() {
           
           {/* Left Column: Image Card */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200/80 bg-[#0E172A] aspect-[16/10] sm:aspect-[4/5] w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200/80 bg-[#211616] aspect-[16/10] sm:aspect-[4/5] w-full">
               <img
                 src="/assets/silver_horizon/specifications_interior.webp"
                 alt="Sukhavas Luxury Living Finishes"
@@ -71,14 +71,14 @@ export default function Specifications() {
                     <div className="flex items-center gap-3.5">
                       <div
                         className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors ${
-                          isOpen ? "bg-[#1B0E17] text-[#E6C7A8]" : "bg-[#FAF8F5] text-[#1B0E17]"
+                          isOpen ? "bg-[#211616] text-[#E6C7A8]" : "bg-[#FAF8F5] text-[#211616]"
                         }`}
                       >
                         <span className="material-symbols-outlined text-[20px]">
                           {cat.icon}
                         </span>
                       </div>
-                      <h4 className="text-base sm:text-lg font-medium text-[#1B0E17] tracking-tight">
+                      <h4 className="text-base sm:text-lg font-medium text-[#211616] tracking-tight">
                         {cat.title}
                       </h4>
                     </div>
@@ -93,7 +93,7 @@ export default function Specifications() {
                       {cat.items.map((itemText, iIdx) => (
                         <div key={iIdx} className="flex items-start gap-3">
                           <div className="w-1.5 h-1.5 rounded-full bg-[#655335] mt-1.5 shrink-0" />
-                          <span className="leading-relaxed text-[#1B0E17]">{itemText}</span>
+                          <span className="leading-relaxed text-[#211616]">{itemText}</span>
                         </div>
                       ))}
                     </div>

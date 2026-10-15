@@ -17,7 +17,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
     if (!loadMap) {
       return (
         <div className="w-full h-full bg-[#E5DED3]/40 animate-pulse flex items-center justify-center">
-          <span className="text-xs text-[#1B0E17]/70 font-body uppercase tracking-wider font-semibold">
+          <span className="text-xs text-[#211616]/70 font-body uppercase tracking-wider font-semibold">
             Loading Panchkula Map...
           </span>
         </div>
@@ -50,7 +50,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-[#655335] block font-body">
               Location Benefits
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#1B0E17] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-[#211616] leading-[1.15]">
               Nestled In The Serene Vicinity Of Panchkula
             </h2>
           </div>
@@ -111,7 +111,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
               href="https://maps.app.goo.gl/6TbV3FTZdvuHnmDD9?g_st=aw"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#1B0E17] hover:bg-[#271523] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
+              className="w-full bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
             >
               Open location in Google Maps
             </a>
