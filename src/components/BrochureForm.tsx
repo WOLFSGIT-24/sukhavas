@@ -46,10 +46,12 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    e.nativeEvent?.stopImmediatePropagation?.();
+  const handleSubmit = (e?: React.FormEvent | React.KeyboardEvent | React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      (e as any).nativeEvent?.stopImmediatePropagation?.();
+    }
 
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -130,7 +132,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="space-y-3 gtm-ignore">
+              <div role="form" onKeyDown={(e) => { if (e.key === "Enter") handleSubmit(e); }} data-gtm-form-ignore="true" className="space-y-3 gtm-ignore">
                 {/* Full Name */}
                 <div className="space-y-1">
                   <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">
@@ -215,7 +217,8 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 {/* Submit Button */}
                 <div className="pt-1">
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={handleSubmit}
                     disabled={loading}
                     className="w-full flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
                   >
@@ -236,7 +239,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 <p className="text-center text-[10px] text-[#4A5260] font-body pt-0.5">
                   Verified SSL Encryption • Developer: SR Paryavaran Engineers (SRP) • HRERA-PKL-PKL-689-2025
                 </p>
-              </form>
+              </div>
             </>
           ) : (
               <div className="text-center py-6 space-y-5 animate-fade-in">

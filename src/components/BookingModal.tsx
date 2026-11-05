@@ -43,10 +43,12 @@ export default function BookingModal({
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    e.nativeEvent?.stopImmediatePropagation?.();
+  const handleSubmit = (e?: React.FormEvent | React.KeyboardEvent | React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      (e as any).nativeEvent?.stopImmediatePropagation?.();
+    }
 
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -109,7 +111,7 @@ export default function BookingModal({
         {/* Content/Form Area */}
         <div className="p-5 sm:p-8 overflow-y-auto">
           {!submitted ? (
-            <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="space-y-4 sm:space-y-5 gtm-ignore">
+            <div role="form" onKeyDown={(e) => { if (e.key === "Enter") handleSubmit(e); }} data-gtm-form-ignore="true" className="space-y-4 sm:space-y-5 gtm-ignore">
               {/* Full Name */}
               <div className="relative border-b border-gray-200 focus-within:border-[#211616] py-1">
                 <label className="text-[9px] font-extrabold text-[#211616] uppercase tracking-wider block mb-1">
@@ -177,7 +179,8 @@ export default function BookingModal({
               </div>
 
               <button
-                type="submit"
+                type="button"
+                onClick={handleSubmit}
                 disabled={loading}
                 className="w-full flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-50 cursor-pointer transition-all mt-3"
               >
@@ -190,7 +193,7 @@ export default function BookingModal({
                   "VIEW FLOOR PLANS"
                 )}
               </button>
-            </form>
+            </div>
           ) : (
             <div className="text-center py-6 space-y-5 animate-fade-in">
               <div className="h-12 w-12 bg-green-50 border border-green-200 rounded-full flex items-center justify-center mx-auto text-green-600 shadow-sm">
