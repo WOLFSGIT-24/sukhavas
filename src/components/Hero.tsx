@@ -14,9 +14,9 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
       {/* Background Photography - Instant High-Priority LCP Render */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <picture>
-          <source srcSet="/assets/sukhavas/Sukhavas%20Hero%20image.webp" type="image/webp" />
+          <source srcSet="/assets/sukhavas/hero.webp" type="image/webp" />
           <img
-            src="/assets/sukhavas/Sukhavas%20Hero%20image.png"
+            src="/assets/sukhavas/hero.png"
             alt="Sukhavas Contemporary Residential Landmark"
             className="w-full h-full object-cover object-center"
             fetchPriority="high"

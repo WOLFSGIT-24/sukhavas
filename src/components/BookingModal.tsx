@@ -45,6 +45,8 @@ export default function BookingModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent?.stopImmediatePropagation?.();
 
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -107,7 +109,7 @@ export default function BookingModal({
         {/* Content/Form Area */}
         <div className="p-5 sm:p-8 overflow-y-auto">
           {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+            <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="space-y-4 sm:space-y-5 gtm-ignore">
               {/* Full Name */}
               <div className="relative border-b border-gray-200 focus-within:border-[#211616] py-1">
                 <label className="text-[9px] font-extrabold text-[#211616] uppercase tracking-wider block mb-1">

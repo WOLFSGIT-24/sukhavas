@@ -48,6 +48,8 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent?.stopImmediatePropagation?.();
 
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -128,7 +130,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-3">
+              <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="space-y-3 gtm-ignore">
                 {/* Full Name */}
                 <div className="space-y-1">
                   <label className="text-[10px] font-bold text-[#211616] uppercase tracking-wider block">

@@ -54,6 +54,8 @@ export default function DownloadModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent?.stopImmediatePropagation?.();
 
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -122,7 +124,7 @@ export default function DownloadModal({
         {/* Content/Form Area */}
         <div className="p-5 sm:p-8 overflow-y-auto">
           {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="space-y-5 gtm-ignore">
               <div className="text-center mb-4">
                 <p className="text-xs text-[#4E4449] font-body leading-relaxed">
                   Enter your contact details to download the high-resolution architectural brochure with complete 4 BHK layouts and specifications.

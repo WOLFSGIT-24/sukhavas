@@ -27,7 +27,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-10 sm:pb-16 border-b border-white/10">
           <div className="space-y-4 max-w-xl">
             <img
-              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              src="/assets/sukhavas/sukhavas-logo.png"
               alt="Sukhavas: Legacy of Elegance"
               className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
             />

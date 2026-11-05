@@ -64,7 +64,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
             className="flex items-center gap-2 group focus:outline-none z-10"
           >
             <img
-              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              src="/assets/sukhavas/sukhavas-logo.png"
               alt="Sukhavas: Legacy of Elegance"
               className="h-9 sm:h-11 w-auto object-contain brightness-0 invert"
             />
@@ -120,7 +120,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
         <div className="fixed inset-0 top-20 bg-[#211616]/98 backdrop-blur-xl z-40 lg:hidden flex flex-col p-6 sm:p-8 space-y-4 animate-fade-in border-t border-white/10 overflow-y-auto">
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
             <img
-              src="/assets/sukhavas/SUKHAVAS LOGO (2).png"
+              src="/assets/sukhavas/sukhavas-logo.png"
               alt="Sukhavas"
               className="h-8 w-auto object-contain brightness-0 invert"
             />

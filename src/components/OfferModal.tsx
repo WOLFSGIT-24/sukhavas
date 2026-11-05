@@ -63,6 +63,8 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent?.stopImmediatePropagation?.();
     
     const newErrors: Record<string, string> = {};
     if (!/^[A-Za-z\s]+$/.test(formData.fullName.trim())) {
@@ -117,7 +119,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
         </button>
 
         {!submitted ? (
-          <form onSubmit={handleSubmit} className="flex flex-col overflow-y-auto">
+          <form onSubmit={handleSubmit} data-gtm-form-ignore="true" className="flex flex-col overflow-y-auto gtm-ignore">
             <div className="p-5 sm:p-7 pb-4 bg-[#211616] text-white border-b border-white/10 shrink-0">
               <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#E6C7A8]">
                 SR Paryavaran Engineers (SRP)
