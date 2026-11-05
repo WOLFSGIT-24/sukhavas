@@ -21,10 +21,6 @@ export default function BookingModal({
     fullName: "",
     email: "",
     phone: "",
-    preferredDate: "",
-    preferredTime: "11:00",
-    unitType: initialUnitType || "4 BHK Luxury Residence",
-    notes: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -73,10 +69,7 @@ export default function BookingModal({
         fullName: formData.fullName,
         email: formData.email,
         phone: formData.phone,
-        preferredDate: formData.preferredDate || undefined,
-        preferredTime: formData.preferredTime || undefined,
-        source: "floor_plan_enquiry",
-        notes: `Unlocked Floor Plans for ${formData.unitType}`,
+        unitPreference: initialUnitType || undefined,
       });
       setLoading(false);
       setSubmitted(true);

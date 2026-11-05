@@ -9,6 +9,7 @@ export interface LeadSubmission {
   preferredTime?: string;
   status: "Pending" | "Contacted" | "Scheduled" | "Completed";
   notes?: string;
+  unitPreference?: string;
 }
 
 export interface AmenityItem {

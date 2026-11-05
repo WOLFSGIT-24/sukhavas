@@ -68,37 +68,46 @@ export default function App() {
 
   const handleAddLead = (rawLead: Omit<LeadSubmission, "id" | "submittedAt" | "status">) => {
     const isoTimestamp = new Date().toISOString();
-    const localTimestamp = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
     
     const newLead: LeadSubmission = {
       ...rawLead,
       id: "SKV-" + Math.floor(1000 + Math.random() * 9000),
       submittedAt: isoTimestamp,
       status: "Pending",
+      source: rawLead.source || "Website Form",
+      notes: rawLead.notes || (rawLead.unitPreference ? `Preference: ${rawLead.unitPreference}` : ""),
     };
 
-    // Post to Make.com Webhook if configured
-    fetch("https://hook.us1.make.com/2bmmq21zo8ocu9itedtq5oyhu5sg5zad", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        project: "Sukhavas",
-        developer: "SR Paryavaran Engineers (SRP)",
-        id: newLead.id,
-        fullName: newLead.fullName,
-        email: newLead.email,
-        phone: newLead.phone,
-        source: newLead.source,
-        notes: newLead.notes || "",
-        submittedAt: isoTimestamp,
-        localTimestamp: localTimestamp,
-        status: newLead.status,
-      }),
-    }).catch((err) => {
-      console.error("Webhook submission failed:", err);
-    });
+    // Webhook payload: ONLY actual form fields and timestamp (no extra fields!)
+    const webhookPayload: Record<string, string> = {
+      fullName: rawLead.fullName.trim(),
+      email: rawLead.email.trim(),
+      phone: rawLead.phone.trim(),
+    };
+
+    if (rawLead.unitPreference && rawLead.unitPreference.trim()) {
+      webhookPayload.unitPreference = rawLead.unitPreference.trim();
+    }
+
+    webhookPayload.timestamp = isoTimestamp;
+
+    // Post to Webhook (configured via .env or fallback)
+    const webhookUrl =
+      import.meta.env.VITE_WEBHOOK_URL ||
+      (import.meta.env as any).WEBHOOK_URL ||
+      "https://hook.us1.make.com/dnbylidrm0kx1d4pi7srar6k1lqvsg2f";
+
+    if (webhookUrl) {
+      fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(webhookPayload),
+      }).catch((err) => {
+        console.error("Webhook submission failed:", err);
+      });
+    }
 
     const updated = [newLead, ...leads];
     saveLeadsToCache(updated);

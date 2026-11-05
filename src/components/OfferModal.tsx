@@ -14,7 +14,6 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
     email: "",
     phone: "",
     unitPreference: "4 BHK Luxury Residence (Park-Facing)",
-    agree: true,
   });
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -90,9 +89,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
       fullName: formData.fullName,
       email: formData.email,
       phone: formData.phone,
-      source: "popup_enquiry_modal",
-      status: "Pending",
-      notes: `Preference: ${formData.unitPreference}`,
+      unitPreference: formData.unitPreference,
     });
     
     setLoading(false);

@@ -78,8 +78,6 @@ export default function DownloadModal({
         fullName: formData.fullName,
         email: formData.email,
         phone: formData.phone,
-        source: "brochure_download_modal",
-        notes: "Requested Sukhavas brochure download.",
       });
       setLoading(false);
       setSubmitted(true);

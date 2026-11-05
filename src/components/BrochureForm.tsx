@@ -12,10 +12,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
     fullName: "",
     email: "",
     phone: "",
-    preferredDate: "",
-    preferredTime: "",
-    source: "Website Landing Page",
-    unitType: preselectedUnit || "4 BHK Luxury Residence",
+    unitPreference: preselectedUnit || "4 BHK Luxury Residence (Park-Facing)",
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -24,7 +21,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
 
   useEffect(() => {
     if (preselectedUnit) {
-      setFormData((prev) => ({ ...prev, unitType: preselectedUnit }));
+      setFormData((prev) => ({ ...prev, unitPreference: preselectedUnit }));
       const el = document.getElementById("lead-capture-section");
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
@@ -33,18 +30,19 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
   }, [preselectedUnit]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { id, value } = e.target;
+    const { id, name, value } = e.target;
+    const key = name || id;
     
     let sanitizedValue = value;
-    if (id === "phone") {
+    if (key === "phone") {
       sanitizedValue = value.replace(/\D/g, "").slice(0, 10);
-    } else if (id === "fullName") {
+    } else if (key === "fullName") {
       sanitizedValue = value.replace(/[^A-Za-z\s]/g, "");
     }
     
-    setFormData((prev) => ({ ...prev, [id]: sanitizedValue }));
-    if (errors[id]) {
-      setErrors((prev) => ({ ...prev, [id]: "" }));
+    setFormData((prev) => ({ ...prev, [key]: sanitizedValue }));
+    if (errors[key]) {
+      setErrors((prev) => ({ ...prev, [key]: "" }));
     }
   };
 
@@ -74,10 +72,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
         fullName: formData.fullName,
         email: formData.email,
         phone: formData.phone,
-        preferredDate: formData.preferredDate || undefined,
-        preferredTime: formData.preferredTime || undefined,
-        source: formData.source,
-        notes: `Unit preference: ${formData.unitType}`,
+        unitPreference: formData.unitPreference,
       });
 
       setLoading(false);
@@ -203,8 +198,9 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                     Residence Preference
                   </label>
                   <select
-                    id="unitType"
-                    value={formData.unitType}
+                    id="unitPreference"
+                    name="unitPreference"
+                    value={formData.unitPreference}
                     onChange={handleChange}
                     className="w-full border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] text-xs sm:text-sm font-body outline-none focus:border-[#211616] focus:bg-white"
                   >
