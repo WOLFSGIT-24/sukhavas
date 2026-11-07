@@ -4,7 +4,6 @@ interface HeaderProps {
   onOpenBooking: () => void;
   onToggleAdmin: () => void;
   isAdminActive: boolean;
-  onRequestDownload?: () => void;
 }
 
 export default function Header({ onOpenBooking }: HeaderProps) {

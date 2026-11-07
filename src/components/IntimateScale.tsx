@@ -1,11 +1,10 @@
 import React from "react";
 
 interface IntimateScaleProps {
-  onRequestDownload?: () => void;
   onOpenEnquiry?: () => void;
 }
 
-export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: IntimateScaleProps) {
+export default function IntimateScale({ onOpenEnquiry }: IntimateScaleProps) {
   // Bottom Auto-Scrolling Building Images
   const autoScrollImages = [
     {

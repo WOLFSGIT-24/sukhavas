@@ -1,11 +1,10 @@
 import React from "react";
 
 interface ProjectHighlightsProps {
-  onRequestDownload?: () => void;
   onOpenBooking?: () => void;
 }
 
-export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: ProjectHighlightsProps) {
+export default function ProjectHighlights({ onOpenBooking }: ProjectHighlightsProps) {
   return (
     <section id="highlights" className="w-full relative bg-white text-[#161A22] overflow-hidden">
       

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { CheckCircle2, Phone, MessageCircle, Download, ArrowLeft, Building2, MapPin, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Phone, MessageCircle, ArrowLeft, Building2, MapPin, ShieldCheck } from "lucide-react";
 
 export default function ThankYouPage() {
   useEffect(() => {
@@ -16,20 +16,6 @@ export default function ThankYouPage() {
       });
     }
   }, []);
-
-  const handleDownloadBrochure = () => {
-    try {
-      window.open("/Brochure.pdf", "_blank");
-      const link = document.createElement("a");
-      link.href = "/Brochure.pdf";
-      link.setAttribute("download", "Sukhavas_Brochure.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (e) {
-      console.error("Error opening brochure", e);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-[#211616] text-white flex flex-col justify-between selection:bg-[#ded4c4] selection:text-[#211616] font-body relative overflow-x-hidden">
@@ -132,15 +118,6 @@ export default function ThankYouPage() {
               <MessageCircle className="h-4 w-4" />
               <span>WhatsApp Us</span>
             </a>
-
-            <button
-              type="button"
-              onClick={handleDownloadBrochure}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-6 py-3.5 rounded-full font-semibold text-xs uppercase tracking-wider transition-all hover:scale-[1.02] cursor-pointer"
-            >
-              <Download className="h-4 w-4 text-[#E6C7A8]" />
-              <span>Brochure</span>
-            </button>
           </div>
 
           {/* Back to Home Link */}
@@ -163,3 +140,4 @@ export default function ThankYouPage() {
     </div>
   );
 }
+

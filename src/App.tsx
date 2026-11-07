@@ -19,7 +19,6 @@ import AdminDashboard from "./components/AdminDashboard";
 import PrivacyPolicyModal from "./components/PrivacyPolicyModal";
 import TermsModal from "./components/TermsModal";
 import OfferModal from "./components/OfferModal";
-import DownloadModal from "./components/DownloadModal";
 import ThankYouPage from "./components/ThankYouPage";
 
 const LOCAL_STORAGE_KEY = "sukhavas_leads";
@@ -32,8 +31,6 @@ export default function App() {
   const [termsOpen, setTermsOpen] = useState(false);
   const [offerOpen, setOfferOpen] = useState(false);
   const [preselectedUnit, setPreselectedUnit] = useState<string | null>(null);
-  const [downloadModalOpen, setDownloadModalOpen] = useState(false);
-  const [triggerDownload, setTriggerDownload] = useState(false);
   const [floorPlansUnlocked, setFloorPlansUnlocked] = useState(() => {
     try {
       return localStorage.getItem("sukhavas_floor_plans_unlocked") === "true";
@@ -134,30 +131,10 @@ export default function App() {
     }
     setFloorPlansUnlocked(true);
 
-    if (triggerDownload) {
-      try {
-        window.open("/Brochure.pdf", "_blank");
-        const link = document.createElement("a");
-        link.href = "/Brochure.pdf";
-        link.setAttribute("download", "Sukhavas_Brochure.pdf");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } catch (e) {
-        console.error("Error triggering PDF download", e);
-      }
-      setTriggerDownload(false);
-    }
-
     // Redirect to Thank You page for GTM conversion tracking
     setTimeout(() => {
       window.location.href = "/thank-you";
     }, 400);
-  };
-
-  const handleRequestDownload = () => {
-    setTriggerDownload(true);
-    setDownloadModalOpen(true);
   };
 
   const handleUpdateStatus = (id: string, status: LeadSubmission["status"]) => {
@@ -197,20 +174,17 @@ export default function App() {
         }}
         onToggleAdmin={() => setAdminOpen(!adminOpen)}
         isAdminActive={adminOpen}
-        onRequestDownload={handleRequestDownload}
       />
 
       {/* Hero Entrance Banner */}
       <Hero
         onOpenEnquiry={handleHeroEnquiry}
-        onRequestDownload={handleRequestDownload}
       />
 
       {/* Below-the-fold sections loaded asynchronously */}
       <Suspense fallback={<div className="min-h-screen bg-[#211616]" />}>
         {/* Property Architecture & Landmark Overview */}
         <IntimateScale 
-          onRequestDownload={handleRequestDownload} 
           onOpenEnquiry={handleHeroEnquiry}
         />
 
@@ -223,7 +197,6 @@ export default function App() {
         {/* Curated Amenities Showcase (Clubhouse, Sports, Nature, Smart Living) */}
         <Amenities 
           onOpenBooking={handleHeroEnquiry} 
-          onRequestDownload={handleRequestDownload}
         />
 
         {/* Interactive Floor Drafting Plans (Hidden as requested) */}
@@ -253,7 +226,6 @@ export default function App() {
           onOpenPrivacy={() => setPrivacyOpen(true)}
           onOpenTerms={() => setTermsOpen(true)}
           onOpenBooking={handleHeroEnquiry}
-          onRequestDownload={handleRequestDownload}
         />
       </Suspense>
 
@@ -281,7 +253,7 @@ export default function App() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/917696769007?text=Hi%2C%20I%20am%20interested%20in%20Sukhavas%20in%20Sector%2024%2C%20Panchkula.%20Please%20share%20the%20brochure%20and%20details."
+        href="https://wa.me/917696769007?text=Hi%2C%20I%20am%20interested%20in%20Sukhavas%20in%20Sector%2024%2C%20Panchkula.%20Please%20share%20more%20details."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-[76px] md:bottom-8 right-4 md:right-8 bg-[#25D366] text-white p-3.5 md:p-4 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-all z-40 flex items-center justify-center animate-fade-in"
@@ -309,14 +281,6 @@ export default function App() {
             }}
             onAddLead={handleAddLead}
             initialUnitType={preselectedUnit}
-          />
-        )}
-
-        {downloadModalOpen && (
-          <DownloadModal
-            isOpen={downloadModalOpen}
-            onClose={() => setDownloadModalOpen(false)}
-            onAddLead={handleAddLead}
           />
         )}
 

@@ -3,10 +3,9 @@ import { amenitiesData } from "../data";
 
 interface AmenitiesProps {
   onOpenBooking?: () => void;
-  onRequestDownload?: () => void;
 }
 
-export default function Amenities({ onOpenBooking, onRequestDownload }: AmenitiesProps) {
+export default function Amenities({ onOpenBooking }: AmenitiesProps) {
   // Curated slider items matching the 4 key sections from Sukhavas PDF Brochure
   const sliderItems = [
     {

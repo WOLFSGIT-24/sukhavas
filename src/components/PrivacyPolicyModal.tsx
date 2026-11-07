@@ -52,7 +52,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
 
           <div className="space-y-2">
             <h3 className="font-display text-lg font-bold text-[#211616]">1. Information We Collect</h3>
-            <p>When you fill an enquiry, request floor plans, or download a brochure, we collect your Name, Phone Number, Email Address, and Unit Configuration preferences.</p>
+            <p>When you fill an enquiry or request property information, we collect your Name, Phone Number, Email Address, and Unit Configuration preferences.</p>
           </div>
 
           <div className="space-y-2">

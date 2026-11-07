@@ -6,7 +6,6 @@ interface FooterProps {
   onOpenPrivacy?: () => void;
   onOpenTerms?: () => void;
   onOpenBooking?: () => void;
-  onRequestDownload?: () => void;
 }
 
 export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {}) {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Download, CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { LeadSubmission } from "../types";
 
 interface BrochureFormProps {
@@ -82,20 +82,6 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
       setLoading(false);
       setFormSubmitted(true);
     }, 1000);
-  };
-
-  const handleDownloadBrochure = () => {
-    try {
-      window.open("/Brochure.pdf", "_blank");
-      const link = document.createElement("a");
-      link.href = "/Brochure.pdf";
-      link.setAttribute("download", "Sukhavas_Brochure.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (e) {
-      console.error("Error downloading brochure", e);
-    }
   };
 
   return (
@@ -252,24 +238,16 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                     Registration Confirmed
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-[#4E4449] leading-relaxed">
-                    Thank you, <strong>{formData.fullName}</strong>. The Sukhavas catalog and layout details are ready.
+                    Thank you, <strong>{formData.fullName}</strong>. Our advisory team will connect with you shortly with complete details.
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-                  <button
-                    onClick={handleDownloadBrochure}
-                    className="flex items-center justify-center gap-2 bg-[#211616] hover:bg-[#2e1f1f] text-[#FAF8F5] font-body text-xs font-bold tracking-widest uppercase px-6 py-3.5 rounded-xl shadow-lg transition-all cursor-pointer"
-                  >
-                    <Download className="h-4 w-4 text-[#E6C7A8]" />
-                    <span>DOWNLOAD BROCHURE</span>
-                  </button>
-
+                <div className="flex justify-center pt-2">
                   <button
                     onClick={() => setFormSubmitted(false)}
-                    className="border border-[#211616] text-[#211616] hover:bg-[#211616] hover:text-white font-body text-xs font-bold tracking-widest uppercase px-5 py-3.5 rounded-xl transition-all cursor-pointer"
+                    className="border border-[#211616] text-[#211616] hover:bg-[#211616] hover:text-white font-body text-xs font-bold tracking-widest uppercase px-6 py-3.5 rounded-xl transition-all cursor-pointer"
                   >
-                    NEW INQUIRY
+                    SUBMIT ANOTHER INQUIRY
                   </button>
                 </div>
               </div>
