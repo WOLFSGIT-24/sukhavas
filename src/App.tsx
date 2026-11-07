@@ -19,6 +19,7 @@ import AdminDashboard from "./components/AdminDashboard";
 import PrivacyPolicyModal from "./components/PrivacyPolicyModal";
 import TermsModal from "./components/TermsModal";
 import OfferModal from "./components/OfferModal";
+import ThankYouPage from "./components/ThankYouPage";
 
 const LOCAL_STORAGE_KEY = "sukhavas_leads";
 
@@ -37,6 +38,21 @@ export default function App() {
       return false;
     }
   });
+
+  const [currentPath, setCurrentPath] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.location.pathname.toLowerCase();
+    }
+    return "/";
+  });
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname.toLowerCase());
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   // Read initial cache
   useEffect(() => {
@@ -115,14 +131,10 @@ export default function App() {
     }
     setFloorPlansUnlocked(true);
 
-    // Push conversion event to GTM dataLayer
-    if (typeof window !== "undefined") {
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      (window as any).dataLayer.push({
-        event: "form_submission",
-        unitPreference: newLead.unitPreference || "Not specified",
-      });
-    }
+    // Redirect to Thank You page for GTM conversion tracking
+    setTimeout(() => {
+      window.location.href = "/thank-you";
+    }, 400);
   };
 
   const handleUpdateStatus = (id: string, status: LeadSubmission["status"]) => {
@@ -147,6 +159,10 @@ export default function App() {
   const handleHeroEnquiry = () => {
     setOfferOpen(true);
   };
+
+  if (currentPath === "/thank-you" || currentPath === "/thank-you/" || currentPath === "/thank-you.html") {
+    return <ThankYouPage />;
+  }
 
   return (
     <div className="relative min-h-screen bg-[#211616] text-[#161A22] overflow-x-hidden w-full font-body">

@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/assets/(.*)",
@@ -20,6 +21,18 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/thank-you",
+      "destination": "/thank-you/index.html"
+    },
+    {
+      "source": "/thank-you/",
+      "destination": "/thank-you/index.html"
+    },
+    {
+      "source": "/thank-you.html",
+      "destination": "/thank-you/index.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
