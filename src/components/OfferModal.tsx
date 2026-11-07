@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { X, Check, Sparkles, ShieldCheck } from "lucide-react";
+import { X, Sparkles, ShieldCheck } from "lucide-react";
 import { projectSnapshot } from "../data";
 
 interface OfferModalProps {
@@ -16,7 +16,6 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
     unitPreference: "4 BHK Luxury Residence (Park-Facing)",
   });
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   useEffect(() => {
@@ -87,7 +86,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
     setErrors({});
     setLoading(true);
     
-    await new Promise((resolve) => setTimeout(resolve, 900));
+    await new Promise((resolve) => setTimeout(resolve, 600));
     
     onAddLead({
       fullName: formData.fullName,
@@ -97,12 +96,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
     });
     
     setLoading(false);
-    setSubmitted(true);
-    
-    setTimeout(() => {
-      onClose();
-      setTimeout(() => setSubmitted(false), 300);
-    }, 2500);
+    onClose();
   };
 
   return (
@@ -120,8 +114,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
           <X className="h-4 w-4" />
         </button>
 
-        {!submitted ? (
-          <div role="form" onKeyDown={(e) => { if (e.key === "Enter") handleSubmit(e); }} data-gtm-form-ignore="true" className="flex flex-col overflow-y-auto gtm-ignore">
+        <div role="form" onKeyDown={(e) => { if (e.key === "Enter") handleSubmit(e); }} data-gtm-form-ignore="true" className="flex flex-col overflow-y-auto gtm-ignore">
             <div className="p-5 sm:p-7 pb-4 bg-[#211616] text-white border-b border-white/10 shrink-0">
               <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#E6C7A8]">
                 SR Paryavaran Engineers (SRP)
@@ -224,17 +217,6 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
               </button>
             </div>
           </div>
-        ) : (
-          <div className="p-8 text-center h-[360px] flex flex-col justify-center items-center space-y-3">
-            <div className="h-14 w-14 bg-green-50 border border-green-200 rounded-full flex items-center justify-center text-green-600 shadow-sm">
-              <Check className="h-7 w-7" />
-            </div>
-            <h3 className="font-display text-2xl font-bold text-[#211616]">Request Received</h3>
-            <p className="font-body text-xs text-[#4E4449] leading-relaxed max-w-xs">
-              Thank you! Our relationship team from SR Paryavaran Engineers (SRP) has received your inquiry and will contact you promptly.
-            </p>
-          </div>
-        )}
       </div>
     </div>
   );
