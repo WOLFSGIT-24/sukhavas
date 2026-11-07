@@ -14,12 +14,13 @@ const Footer = lazy(() => import("./components/Footer"));
 const Gallery = lazy(() => import("./components/Gallery"));
 
 // Lazy load dialog modals to reduce initial JavaScript execution
-const BookingModal = lazy(() => import("./components/BookingModal"));
-const AdminDashboard = lazy(() => import("./components/AdminDashboard"));
-const PrivacyPolicyModal = lazy(() => import("./components/PrivacyPolicyModal"));
-const TermsModal = lazy(() => import("./components/TermsModal"));
-const OfferModal = lazy(() => import("./components/OfferModal"));
-const DownloadModal = lazy(() => import("./components/DownloadModal"));
+import BookingModal from "./components/BookingModal";
+import AdminDashboard from "./components/AdminDashboard";
+import PrivacyPolicyModal from "./components/PrivacyPolicyModal";
+import TermsModal from "./components/TermsModal";
+import OfferModal from "./components/OfferModal";
+import DownloadModal from "./components/DownloadModal";
+import ThankYouPage from "./components/ThankYouPage";
 
 const LOCAL_STORAGE_KEY = "sukhavas_leads";
 
@@ -40,6 +41,21 @@ export default function App() {
       return false;
     }
   });
+
+  const [currentPath, setCurrentPath] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.location.pathname.toLowerCase();
+    }
+    return "/";
+  });
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname.toLowerCase());
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   // Read initial cache
   useEffect(() => {
@@ -132,6 +148,11 @@ export default function App() {
       }
       setTriggerDownload(false);
     }
+
+    // Redirect to Thank You page for GTM conversion tracking
+    setTimeout(() => {
+      window.location.href = "/thank-you";
+    }, 400);
   };
 
   const handleRequestDownload = () => {
@@ -161,6 +182,10 @@ export default function App() {
   const handleHeroEnquiry = () => {
     setOfferOpen(true);
   };
+
+  if (currentPath === "/thank-you" || currentPath === "/thank-you/" || currentPath === "/thank-you.html") {
+    return <ThankYouPage />;
+  }
 
   return (
     <div className="relative min-h-screen bg-[#211616] text-[#161A22] overflow-x-hidden w-full font-body">

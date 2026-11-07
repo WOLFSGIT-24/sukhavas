@@ -171,6 +171,10 @@
     </style>
   </head>
   <body class="bg-[#211616] text-[#161A22] antialiased selection:bg-[#ded4c4] selection:text-[#211616]">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M72J9VVF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root">
       <div class="relative min-h-screen bg-[#211616] text-[#161A22] overflow-x-hidden w-full font-body">
         <!-- Static Prerender Header -->
@@ -236,88 +240,6 @@
     </div>
     
     <script type="module" src="/src/main.tsx"></script>
-
-    <!-- Google Tag Manager (Deferred) & Adblocker Error Shield -->
-    <script>
-      (function() {
-        // Prevent Google Ads automated form-data scraping from throwing net::ERR_BLOCKED_BY_CLIENT
-        var isFormDataUrl = function(url) {
-          return typeof url === 'string' && (url.indexOf('pagead/form-data') !== -1 || url.indexOf('google.com/pagead/form-data') !== -1);
-        };
-
-        // 1. Intercept XMLHttpRequest (POST / GET)
-        var origOpen = XMLHttpRequest.prototype.open;
-        XMLHttpRequest.prototype.open = function(method, url) {
-          if (isFormDataUrl(url)) {
-            this._isFormDataBeacon = true;
-            return;
-          }
-          return origOpen.apply(this, arguments);
-        };
-        var origSend = XMLHttpRequest.prototype.send;
-        XMLHttpRequest.prototype.send = function() {
-          if (this._isFormDataBeacon) {
-            Object.defineProperty(this, 'readyState', { value: 4 });
-            Object.defineProperty(this, 'status', { value: 200 });
-            Object.defineProperty(this, 'responseText', { value: '' });
-            if (typeof this.onreadystatechange === 'function') this.onreadystatechange();
-            if (typeof this.onload === 'function') this.onload();
-            return;
-          }
-          return origSend.apply(this, arguments);
-        };
-
-        // 2. Intercept fetch
-        if (window.fetch) {
-          var origFetch = window.fetch;
-          window.fetch = function(input, init) {
-            var url = typeof input === 'string' ? input : (input && input.url ? input.url : '');
-            if (isFormDataUrl(url)) {
-              return Promise.resolve(new Response('', { status: 200 }));
-            }
-            return origFetch.apply(this, arguments);
-          };
-        }
-
-        // 3. Intercept Image Beacon (.src)
-        var origImageDesc = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
-        if (origImageDesc && origImageDesc.set) {
-          Object.defineProperty(HTMLImageElement.prototype, 'src', {
-            set: function(val) {
-              if (isFormDataUrl(val)) return;
-              return origImageDesc.set.call(this, val);
-            },
-            get: origImageDesc.get
-          });
-        }
-
-        // 4. Intercept navigator.sendBeacon
-        if (navigator.sendBeacon) {
-          var origSendBeacon = navigator.sendBeacon.bind(navigator);
-          navigator.sendBeacon = function(url, data) {
-            if (isFormDataUrl(url)) return true;
-            return origSendBeacon(url, data);
-          };
-        }
-      })();
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('set', 'allow_enhanced_conversions', false);
-      gtag('set', 'restricted_data_processing', true);
-      gtag('config', 'AW-18395394837', { 'allow_enhanced_conversions': false });
-
-      window.addEventListener('load', function() {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MKP6JNS8');
-      });
-    </script>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKP6JNS8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager -->
   </body>
 </html>
 
